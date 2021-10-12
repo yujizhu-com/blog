@@ -105,8 +105,8 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h3 id="一、文件无法上传"><a href="#一、文件无法上传" class="headerlink" title="一、文件无法上传"></a>一、文件无法上传</h3><ul>
-<li><p>辨别服务器端ftp主动与被动模式<br>检查/etc/vsftpd/vsftpd.conf  </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">connect_from_port_20=YES #主动模式</span><br></pre></td></tr></table></figure></li>
+<li><p>辨别服务器端ftp主动与被动模式<br>检查/etc/vsftpd/vsftpd.conf<br><code>connect_from_port_20=YES #主动模式</code></p>
+</li>
 <li><p>主动模式下，确保防火墙打开了端口20  </p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-port=20/tcp</span><br><span class="line">firewall-cmd --reload #激活修改的配置</span><br></pre></td></tr></table></figure>
 <p>也可以选择关闭防火墙</p>
@@ -132,7 +132,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo0fg6g000181vt2p548goq" data-title="实操ftp遇到的问题" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo0l3wo000164vthyp5fm3x" data-title="实操ftp遇到的问题" class="article-share-link">Share</a>
       
       
       
@@ -177,7 +177,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/%E9%98%B2%E7%81%AB%E5%A2%99/2021/10/12/" data-id="ckuo0fg6k000381vtf6a7caho" data-title="防火墙" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/%E9%98%B2%E7%81%AB%E5%A2%99/2021/10/12/" data-id="ckuo0l3wx000364vt91zlgp9z" data-title="防火墙" class="article-share-link">Share</a>
       
       
       
@@ -240,7 +240,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/FTP/2021/10/12/" data-id="ckuo0fg5v000081vt3277cbwv" data-title="FTP" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/FTP/2021/10/12/" data-id="ckuo0l3wa000064vt9jhq2o66" data-title="FTP" class="article-share-link">Share</a>
       
       
       
