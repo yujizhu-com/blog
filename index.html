@@ -105,233 +105,15 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>目录<br>一、PuzzleSDK<br>1.关键字<br>2.1按专题        2.2 按目录       2.3按类型<br>二、SDK维护<br>三、规范<br>四、常用概念的定义</p>
-<p>&lt;–! more –&gt;</p>
-<pre><code>目录  
-一、PuzzleSDK  
-    1.关键字  
-    2.1按专题        2.2 按目录       2.3按类型  
-二、SDK维护  
-三、规范  
-四、常用概念的定义
-</code></pre>
-<h1 id="一、PuzzleSDK"><a href="#一、PuzzleSDK" class="headerlink" title="一、PuzzleSDK"></a>一、PuzzleSDK</h1><h3 id="1-关键字"><a href="#1-关键字" class="headerlink" title="1.关键字"></a>1.关键字</h3><pre><code>- 示例
-    PzTest   所有示例代码均在该方法下
-- 命名空间
-    - 一级 pz 
-    - 二级 node、sprite、button、label、progress、json、http、ccb、json、str、debug、ab、res、ptime、other
-</code></pre>
-<h3 id="2-1按专题-专题中列出的项作为项目实现首选项-其他则弃用"><a href="#2-1按专题-专题中列出的项作为项目实现首选项-其他则弃用" class="headerlink" title="2.1按专题    (专题中列出的项作为项目实现首选项,其他则弃用)"></a>2.1按专题    (专题中列出的项作为项目实现首选项,其他则弃用)</h3><pre><code>- SDK根文件  
-    YTCommon.h
-- 读写本地数据
-    由类GB_UserDefault负责                
-    参考:GB_UserDefault::pzTest()
-    [注:支持格式map、vector、set、整形、浮点、串,支持自动+手动保存]
-- 操作音频
-    由单例PzCoreAudio负责,全局变量g_snd      
-    参考:PzCoreAudio::pzTest()
-    [注:支持ogg、mp3]
-- 接入CCB
-    - 加载loader,解析ccbi   
-        由空间ccb负责                     
-        参考:pz::ccb::pzTest()
-    - 操作UI                             
-        由类QCoreLayer负责
-        参考:QCoreLayer::pzTest()
-        [注:ccbi创建Layer/Scene、模态框、绑定UI、弹出Layer、播放动画]
-- 创建精灵
-    由空间sprite负责
-    参考:pz::sprite::pzTest()
-- 操作配置文件
-    - 解析plist
-        由类CDataPlistReader负责
-        参考:CDataPlistReader::pzTest()
-    - json对象                            [注:读、写、保存]
-        由空间json负责
-        参考示例类:Group10000、PzTestModule
-- 新建分组/模块
-    由类PzModule负责
-    参考:PzModule::pzTest()
-- GT、Firebase事件
-    由全局方法onEvent_XXX()负责
-    参考:YTCommonCCRed.h
-- 点击
-    由空间node下的某些方法控制
-    参考:pz::node::pzTest();
-    [点击判定、交互屏蔽、交互监听]
-- 调试
-    - 绘制节点:
-        方法debugDrawLayer
-    - 事件、节点可视化:
-        由单例g_log负责
-        参考:VisualLog::pzTest()
-- 处理字符串
-    由空间str负责
-    参考:pz::str::pzTest()
-    @see 宏FMT 格式化字符串
-    [支持格式化字符串、普通替换、正则替换、切分、大小写转换]
-- 控件
-    - 翻页控件
-        由类PageView负责
-        见PageView::pzTest()
-    - 表格控件
-        由类ZGTableView负责
-        见ZGTableView::pzTest()
-- 压缩、网络通信
-    由空间http负责
-    参考:pz::http::pzTest
-- 宏 
-    由文件UtilsMacros.h负责
-    - 单例宏        Singleton_Imp
-    - 格式化字符串   FMT 
-- Board
-    - 非关卡棋盘UI层   
-        由类CBoard负责
-        属于棋盘UI层
-    - 关卡版棋盘UI层 
-        由类CBoardNN负责
-        属于棋盘UI层
-    - 棋盘的逻辑层
-        由类CMapAssisant负责
-</code></pre>
-<h3 id="2-2按目录"><a href="#2-2按目录" class="headerlink" title="2.2按目录"></a>2.2按目录</h3><pre><code>- psdk 根目录
-    - RedInterstitial   不重要,bulldog广告UI类目录
-    - ytcommon  [**重要**]
-        - core  核心功能区
-            - GB_UserDefault.h    类,负责数据读写存
-            - PzCoreAudio.h       单例(g_snd),负责操作音频
-            - PzLog.h             单例(_vlog),负责日志/节点可视化
-            - PzModule.h          基类,分组类/模块类的基类
-            - QCoreLayer.h        类,负责操作ccb动画和变量
-            - Utils2dxNode.h      全局方法池,汇集了操作节点及其派生类的辅助方法;
-            - UtilsCppSTL.h       全局方法池,汇集了操作std的辅助方法
-            - UtilsMacro.h        宏池,汇集了psdk的宏定义
-            - 弃用
-                CtrlAudioMgr.h    单例,负责操作音频
-        - red   红海API区
-            - CPlatform.h         平台类,提供同样的接口,但不同平台有不同的实现
-            - YTBaseDefRed.h      类池,里面有游戏配置类、常量类、GameLayer类
-            - YTCommonCCRed.h     全局方法池,汇集了GT事件方法、广告加载和播放方法
-        - extension  拓展区
-            - CVector.hpp         提供了向量的极坐标系实现
-            - PzJson.hpp          pz::json的方法池
-        - YTCommonCC.h            只包含puzzle文件,不包含公司Sdk文件的头文件
-        - YTCommon.h              sdk根文件,可直观查阅所有的空间、全局变量,在YTCommonCC.h的基础上,包含了和公司Sdk的文件
-</code></pre>
-<h3 id="2-3按类型"><a href="#2-3按类型" class="headerlink" title="2.3按类型"></a>2.3按类型</h3><pre><code>- 普通类 
-    - GB_UserDefault    负责用户数据的读、写、保存
-    - PzModule          负责定义模块类,继承使用
-    - PzMultiLang       负责多语言
-    - QCoreLayer        负责UI的绑定
-    - 弃用
-        - CtrlAudioMgr  负责操作音频
-- 单例类及其单例变量
-    - PzLog         g_log    可视化日志
-    - PzCoreAudio*  g_snd    负责操作音频
-    - CGConst*      g_const  App的常量配置
-    - CGString*     g_str    多语言类
-    - GTUser*       g_gt2    公司GT工具单例,负责统计GT2事件
-    - RedGoogleAnalytics* g_rga 
-                             firebaseSDK单例,负责统计firebase事件
-- 全局变量(不含单例变量)
-    - g_release         debug\release开关
-- 宏
-    - FMT               格式化串
-    - Singleton_Imp     构造单例
-- pz空间
-    主要给全局方法们划分各自的方法空间
-    - node      针对节点的方法
-    - sprite    针对精灵的方法
-    - button    针对按钮的方法
-    - label     针对标签的方法
-    - progress  针对进度条的方法
-    - json      针对Json的方法
-    - http      针对网络通信的方法
-    - ccb       针对ccb的方法
-    - str       针对字符串的方法
-    - debug     针对调试的方法
-    - ab        针对AB测试的方法
-    - res       针对资源管理(缓存)的方法
-    - ptime     针对时间的方法
-    - other     其他方法
-</code></pre>
-<h1 id="二、SDK维护"><a href="#二、SDK维护" class="headerlink" title="二、SDK维护"></a>二、SDK维护</h1><pre><code>- 新类,要求:             
-    文件前缀Pz
-    在YTCommonCC.h中被包含
-    [注:在pzTest中,给出示例代码和详细描述 ;]
-    
-- 新单例,要求:           
-    提供一个访问的全局变量
-    在YTCommon.h被extern和getInstance()
-    [注:在pzTest中,给出示例代码和详细描述 ;]
-    
-- 新全局方法,要求:        
-    放入对应的pz子空间中,mark上作者,方便溯源 ;
-    [注:在pzTest中,给出示例代码和详细描述 ;]
-    
-- 新模块类,要求:          
-    继承PzModule
-    [注:在pzTest中,给出示例代码和详细描述 ;]
-    
-- 新空间
-    在pzTest中实现示例代码
-    在YTCommon.h被using
-    
-- 新目录,要求
-    参照cocos文件夹组织
-</code></pre>
-<h1 id="三、规范"><a href="#三、规范" class="headerlink" title="三、规范"></a>三、规范</h1><pre><code>- 编码约定
-    普通c++ 的 map, vector, list 就足够用了，非算法性能需要，不要使用更高级的类。
-    不要函数过度设计，比如经常一二句的代码包装成函数。
-    写函数前，先去c++ 与 cocos2d 或 我们的sdk里找下，不要重复造轮子。可以把现在函数改的越来越稳定好用。
-    尽量不要用typedef 定义自己的类型，让别人阅读很费劲，老要跳转到定义看类型。
-    非必要，不要过度使用模板，增加别人维护成本。
-    一切从根本需求出发，考虑公共和可维护性，尽量简单简洁是王道。 直接。
-- 个人的未成熟/不常用的类、api或模块,跟随当前项目,直到收录到sdk或弃用
-- 声明与实现分离    
-    声明在.hpp,实现在.cpp;
-    模版方法在头文件末尾实现 ;
-    没必要写inline函数 ;
-- 实现某功能的方式优先级 
-    类组合&gt;类继承
-    普通类&gt;模块类&gt;单例类
-    方法实现&gt;c++模版实现&gt;宏实现
-- 命名
-    - CCB变量前缀
-      Label ：  lb    
-      Button ： btn
-      Node   ： nd
-      Layer ：  ly
-      Sprite ： sp
-    - 普通变量命名    
-      驼峰命名
-- 注释
-    必要
-        ///             用///代替//
-        pzTest()        每个重要的类/方法都要在pzTest找到示例,示例中给出详细描述
-        @author         注明作者
-        @brief          针对重要method, property, class, file, struct,enum的短描述
-    次之
-        @param          重要参数的信息
-        @return         返回值
-    可选
-        @code           嵌入代码段。结尾使用@endcode
-        @see            指明相关的方法/变量
-</code></pre>
-<h1 id="四、常用概念的定义"><a href="#四、常用概念的定义" class="headerlink" title="四、常用概念的定义"></a>四、常用概念的定义</h1><pre><code>- ccb   能构造出场景UI的配置文件
-    - ccbi      ccb发布后的二进制文件,供程序解析
-    - red       ccb的升级版
-    - redream   red发布后的二进制文件,供程序解析
-- 模块    
-    数据、控制、ui组成一个模块,完全独立于游戏的其他部分,但与SDK耦合
-    通过setEnable(true/false)后的功能是正常的
-    仅通过控制层向外提供功能,内部ui、数据是隐藏的 ; 
-    [注:方便索引、移除模块、解耦]
-</code></pre>
-
+        
+          <p class="article-more-link">
+            <a href="/public/PuzzleSDK/2021/10/12/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/PuzzleSDK/2021/10/12/" data-id="ckuo9ha3e0000dmvtfsc0b441" data-title="PuzzleSDK" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/PuzzleSDK/2021/10/12/" data-id="ckuo9ilhk0000usvt39qgbcbr" data-title="PuzzleSDK" class="article-share-link">Share</a>
       
       
       
@@ -376,7 +158,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/linux%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/2021/10/12/" data-id="ckuo9ha460005dmvtc3w92bxf" data-title="linux一些命令缩写的含义" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/linux%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/2021/10/12/" data-id="ckuo9iliu0005usvt6gvcbwpr" data-title="linux一些命令缩写的含义" class="article-share-link">Share</a>
       
       
       
@@ -423,7 +205,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/" data-id="ckuo9ha3x0003dmvthnyec0ki" data-title="ftp无法上传,无法下载,无法链接" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/" data-id="ckuo9ilis0003usvthx7m3uzw" data-title="ftp无法上传,无法下载,无法链接" class="article-share-link">Share</a>
       
       
       
@@ -472,7 +254,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/" data-id="ckuo9ha3q0001dmvt02orbubt" data-title="firewall防火墙的简单使用" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/" data-id="ckuo9ilic0001usvtbl3ve4av" data-title="firewall防火墙的简单使用" class="article-share-link">Share</a>
       
       
       
@@ -521,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/%E8%A7%A3%E5%86%B3Transmit%E7%9A%84%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo9ha470006dmvtbhewfhcn" data-title="解决Transmit的乱码问题" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/%E8%A7%A3%E5%86%B3Transmit%E7%9A%84%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo9ilj10006usvt3jfjesri" data-title="解决Transmit的乱码问题" class="article-share-link">Share</a>
       
       
       
