@@ -6,12 +6,12 @@
   
   <title>ftp无法上传,无法下载,无法链接 | yujizhu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="一、文件无法上传 辨别服务器端ftp主动与被动模式检查&#x2F;etc&#x2F;vsftpd&#x2F;vsftpd.confconnect_from_port_20&#x3D;YES #主动模式 主动模式下，确保防火墙打开了端口20firewall-cmd --permanent --add-port&#x3D;20&#x2F;tcpfirewall-cmd --reload #激活修改的配置也可以选择关闭防火墙systemctl stop fire">
+  <meta name="description" content="主动与被动连接、文件无法下载&#x2F;上传、无法登录、mac无命令等">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ftp无法上传,无法下载,无法链接">
 <meta property="og:url" content="http://yujizhu.com/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/index.html">
 <meta property="og:site_name" content="yujizhu">
-<meta property="og:description" content="一、文件无法上传 辨别服务器端ftp主动与被动模式检查&#x2F;etc&#x2F;vsftpd&#x2F;vsftpd.confconnect_from_port_20&#x3D;YES #主动模式 主动模式下，确保防火墙打开了端口20firewall-cmd --permanent --add-port&#x3D;20&#x2F;tcpfirewall-cmd --reload #激活修改的配置也可以选择关闭防火墙systemctl stop fire">
+<meta property="og:description" content="主动与被动连接、文件无法下载&#x2F;上传、无法登录、mac无命令等">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-12T11:29:24.000Z">
 <meta property="article:modified_time" content="2021-10-12T11:29:24.000Z">
@@ -107,7 +107,11 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="一、文件无法上传"><a href="#一、文件无法上传" class="headerlink" title="一、文件无法上传"></a>一、文件无法上传</h3><ul>
+        <p>主动与被动连接、文件无法下载/上传、无法登录、mac无命令等</p>
+<span id="more"></span>
+
+
+<h3 id="一、文件无法上传"><a href="#一、文件无法上传" class="headerlink" title="一、文件无法上传"></a>一、文件无法上传</h3><ul>
 <li>辨别服务器端ftp主动与被动模式<br>检查/etc/vsftpd/vsftpd.conf<br><code>connect_from_port_20=YES #主动模式</code></li>
 <li>主动模式下，确保防火墙打开了端口20<br><code>firewall-cmd --permanent --add-port=20/tcp</code><br><code>firewall-cmd --reload #激活修改的配置</code><br>也可以选择关闭防火墙<br><code>systemctl stop firewalld</code></li>
 <li>转移目录所有权,将目标目录所有权给root用户<br><code>#假设向/home目录传输文件</code><br><code>ll /home</code><br><code>chown -R root /home</code></li>
@@ -130,7 +134,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/" data-id="ckuo8nrg50001cmvtaqhtdsni" data-title="ftp无法上传,无法下载,无法链接" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/" data-id="ckuo8wky40001clvteuga2bi4" data-title="ftp无法上传,无法下载,无法链接" class="article-share-link">Share</a>
       
       
       
