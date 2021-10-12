@@ -96,7 +96,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/public/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/">实操ftp遇到的问题</a>
+      <a class="p-name article-title" href="/public/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/">ftp无法上传,无法下载,无法链接</a>
     </h1>
   
 
@@ -127,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo5gj5r0000ebvtakv4c76z" data-title="实操ftp遇到的问题" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo5q42u0001o1vt8l834ysi" data-title="ftp无法上传,无法下载,无法链接" class="article-share-link">Share</a>
       
       
       
@@ -141,9 +141,9 @@
 
 
   
-    <article id="post-防火墙" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-firewall防火墙的简单使用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/public/%E9%98%B2%E7%81%AB%E5%A2%99/2021/10/12/" class="article-date">
+    <a href="/public/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/" class="article-date">
   <time class="dt-published" datetime="2021-10-12T08:32:07.000Z" itemprop="datePublished">2021-10-12</time>
 </a>
     
@@ -155,14 +155,28 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/public/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/">firewall防火墙的简单使用</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>十、防火墙<br>    启动    systemctl [] firewalld<br>    查看     firewall-cmd –list-all<br>    加服务  firewall-cmd –permanent –add-service=http<br>    加端口    firewall-cmd –permanent –add-port=8080/tcp<br>            –remove-port=8080/tcp<br>    重载     firewall-cmd –reload<br>    @see ftp<br>    若启动了防火墙,客户机要ftp被动连接服务器告知的端口,那么服务器不仅要开放21端口，还要开放1025–5000的所有端口;此时用ftp主动链接即可</p>
+        <p>十、防火墙<br>    启动<br>    <code>systemctl start/stop/restart firewalld</code><br>    查看<br>    <code>firewall-cmd --list-all</code><br>    加服务<br>    <code>firewall-cmd --permanent --add-service=http</code><br>    移除服务<br>    <code>firewall-cmd --permanent --remove-service=http</code><br>    加端口<br>    <code>firewall-cmd --permanent --add-port=8080/tcp</code><br>    移除端口<br>    <code>firewall-cmd --permanent --add-port=8080/tcp</code><br>    重载     </p>
+<pre><code>`firewall-cmd --reload 但凡改动过一处,都要刷新`
+@see ftp
+若启动了防火墙,客户机要ftp被动连接服务器告知的端口,那么服务器不仅要开放21端口，还要开放1025--5000的所有端口;此时用ftp主动链接即可
+</code></pre>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/%E9%98%B2%E7%81%AB%E5%A2%99/2021/10/12/" data-id="ckuo5gj5z0003ebvt6lo9d6al" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/" data-id="ckuo5q42p0000o1vt0a2e5gpg" data-title="firewall防火墙的简单使用" class="article-share-link">Share</a>
       
       
       
@@ -190,6 +204,16 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/public/%E8%A7%A3%E5%86%B3Transmit%E7%9A%84%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/">解决Transmit的乱码问题</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h1 id="一、文件名显示乱码"><a href="#一、文件名显示乱码" class="headerlink" title="一、文件名显示乱码"></a>一、文件名显示乱码</h1><p>菜单项里找到UTF-8并设置</p>
@@ -200,7 +224,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/%E8%A7%A3%E5%86%B3Transmit%E7%9A%84%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo5gj5w0001ebvthsg41nrr" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/%E8%A7%A3%E5%86%B3Transmit%E7%9A%84%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo5q42y0003o1vt8nvp481j" data-title="解决Transmit的乱码问题" class="article-share-link">Share</a>
       
       
       
@@ -266,15 +290,15 @@
       <ul>
         
           <li>
-            <a href="/public/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/">实操ftp遇到的问题</a>
+            <a href="/public/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/">ftp无法上传,无法下载,无法链接</a>
           </li>
         
           <li>
-            <a href="/public/%E9%98%B2%E7%81%AB%E5%A2%99/2021/10/12/">(no title)</a>
+            <a href="/public/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/">firewall防火墙的简单使用</a>
           </li>
         
           <li>
-            <a href="/public/%E8%A7%A3%E5%86%B3Transmit%E7%9A%84%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/">(no title)</a>
+            <a href="/public/%E8%A7%A3%E5%86%B3Transmit%E7%9A%84%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/">解决Transmit的乱码问题</a>
           </li>
         
       </ul>
