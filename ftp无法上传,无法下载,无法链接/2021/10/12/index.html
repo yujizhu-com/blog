@@ -4,17 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>Category: ftp | yujizhu</title>
+  <title>ftp无法上传,无法下载,无法链接 | yujizhu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="花开花落岂由之,当有豪情似旧时">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yujizhu">
-<meta property="og:url" content="http://yujizhu.com/categories/linux/ftp/index.html">
+  <meta name="description" content="一、文件无法上传 辨别服务器端ftp主动与被动模式检查&#x2F;etc&#x2F;vsftpd&#x2F;vsftpd.confconnect_from_port_20&#x3D;YES #主动模式 主动模式下，确保防火墙打开了端口20firewall-cmd --permanent --add-port&#x3D;20&#x2F;tcpfirewall-cmd --reload #激活修改的配置也可以选择关闭防火墙systemctl stop fire">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ftp无法上传,无法下载,无法链接">
+<meta property="og:url" content="http://yujizhu.com/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/index.html">
 <meta property="og:site_name" content="yujizhu">
-<meta property="og:description" content="花开花落岂由之,当有豪情似旧时">
+<meta property="og:description" content="一、文件无法上传 辨别服务器端ftp主动与被动模式检查&#x2F;etc&#x2F;vsftpd&#x2F;vsftpd.confconnect_from_port_20&#x3D;YES #主动模式 主动模式下，确保防火墙打开了端口20firewall-cmd --permanent --add-port&#x3D;20&#x2F;tcpfirewall-cmd --reload #激活修改的配置也可以选择关闭防火墙systemctl stop fire">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-10-12T11:29:24.000Z">
+<meta property="article:modified_time" content="2021-10-12T11:29:24.000Z">
 <meta property="article:author" content="yujizhu">
-<meta property="article:tag" content="linux cocos">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="ftp">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/public/atom.xml" title="yujizhu" type="application/atom+xml">
@@ -76,39 +81,86 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/public/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/public/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-10-12T11:29:24.000Z" itemprop="datePublished">Oct 12</time>
+        <section id="main"><article id="post-ftp无法上传,无法下载,无法链接" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/public/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/" class="article-date">
+  <time class="dt-published" datetime="2021-10-12T11:29:24.000Z" itemprop="datePublished">2021-10-12</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/public/categories/linux/">linux</a>►<a class="article-category-link" href="/public/categories/linux/ftp/">ftp</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/public/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/">ftp无法上传,无法下载,无法链接</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      ftp无法上传,无法下载,无法链接
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="一、文件无法上传"><a href="#一、文件无法上传" class="headerlink" title="一、文件无法上传"></a>一、文件无法上传</h3><ul>
+<li>辨别服务器端ftp主动与被动模式<br>检查/etc/vsftpd/vsftpd.conf<br><code>connect_from_port_20=YES #主动模式</code></li>
+<li>主动模式下，确保防火墙打开了端口20<br><code>firewall-cmd --permanent --add-port=20/tcp</code><br><code>firewall-cmd --reload #激活修改的配置</code><br>也可以选择关闭防火墙<br><code>systemctl stop firewalld</code></li>
+<li>转移目录所有权,将目标目录所有权给root用户<br><code>#假设向/home目录传输文件</code><br><code>ll /home</code><br><code>chown -R root /home</code></li>
+<li>确保/etc/vsftpd/vsftpd.conf配置中<br><code>write_enable=YES</code></li>
+</ul>
+<h3 id="二、无法登录"><a href="#二、无法登录" class="headerlink" title="二、无法登录"></a>二、无法登录</h3><ul>
+<li>更改配置vsftpd.conf<br><code>#/etc/vsftpd/vsftpd.conf</code><br><code>userlist_enable=NO</code></li>
+<li>检查ftpusers,删除要登录的用户名</li>
+<li>检查user_list,添加要登录的用户名</li>
+<li>重启<br><code>systemctl restart vsftpd</code></li>
+</ul>
+<h3 id="三、Mac终端找不到ftp命令"><a href="#三、Mac终端找不到ftp命令" class="headerlink" title="三、Mac终端找不到ftp命令"></a>三、Mac终端找不到ftp命令</h3><ul>
+<li>安装ftp等工具<br><code>brew install inetutils</code></li>
+</ul>
+<h3 id="四、一些概念"><a href="#四、一些概念" class="headerlink" title="四、一些概念"></a>四、一些概念</h3><ul>
+<li>主动FTP:<br>命令连接：客户端 大于1024端口 &gt;&gt; 服务器 21端口<br>数据连接：服务器 客户端（大于1024的端口）&lt;&lt; 20端口</li>
+<li>被动FTP：<br>命令连接：客户端大于1024端口 &gt;&gt; 服务器 21端口<br>数据连接：客户端大于1024端口 &gt;&gt; 服务器大于1024端口</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yujizhu.com/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/" data-id="ckuo8ghns0001vjvtc4135t9l" data-title="ftp无法上传,无法下载,无法链接" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/public/tags/ftp/" rel="tag">ftp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/public/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/public/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/public/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/public/linux%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/2021/10/12/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          linux一些命令缩写的含义
+        
+      </div>
+    </a>
+  
+  
+    <a href="/public/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">firewall防火墙的简单使用</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>

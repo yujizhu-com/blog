@@ -4,22 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>ftp无法上传,无法下载,无法链接 | yujizhu</title>
+  <title>linux一些命令缩写的含义 | yujizhu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="一、文件无法上传 辨别服务器端ftp主动与被动模式检查&#x2F;etc&#x2F;vsftpd&#x2F;vsftpd.confconnect_from_port_20&#x3D;YES #主动模式 主动模式下，确保防火墙打开了端口20firewall-cmd --permanent --add-port&#x3D;20&#x2F;tcpfirewall-cmd --reload #激活修改的配置也可以选择关闭防火墙systemctl stop fire">
+  <meta name="description" content="vsftpd、firewalld、httpd等">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ftp无法上传,无法下载,无法链接">
-<meta property="og:url" content="http://yujizhu.com/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/index.html">
+<meta property="og:title" content="linux一些命令缩写的含义">
+<meta property="og:url" content="http://yujizhu.com/linux%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/2021/10/12/index.html">
 <meta property="og:site_name" content="yujizhu">
-<meta property="og:description" content="一、文件无法上传 辨别服务器端ftp主动与被动模式检查&#x2F;etc&#x2F;vsftpd&#x2F;vsftpd.confconnect_from_port_20&#x3D;YES #主动模式 主动模式下，确保防火墙打开了端口20firewall-cmd --permanent --add-port&#x3D;20&#x2F;tcpfirewall-cmd --reload #激活修改的配置也可以选择关闭防火墙systemctl stop fire">
+<meta property="og:description" content="vsftpd、firewalld、httpd等">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-10-12T11:29:24.000Z">
-<meta property="article:modified_time" content="2021-10-12T11:29:24.000Z">
+<meta property="article:published_time" content="2021-10-12T14:44:35.000Z">
+<meta property="article:modified_time" content="2021-10-12T14:44:35.000Z">
 <meta property="article:author" content="yujizhu">
-<meta property="article:tag" content="linux">
-<meta property="article:tag" content="计算机">
-<meta property="article:tag" content="ftp">
-<meta property="article:tag" content="技术">
+<meta property="article:tag" content="linux cocos">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/public/atom.xml" title="yujizhu" type="application/atom+xml">
@@ -81,16 +78,12 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-实操ftp遇到的问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-linux一些命令缩写的含义" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/public/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/" class="article-date">
-  <time class="dt-published" datetime="2021-10-12T11:29:24.000Z" itemprop="datePublished">2021-10-12</time>
+    <a href="/public/linux%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/2021/10/12/" class="article-date">
+  <time class="dt-published" datetime="2021-10-12T14:44:35.000Z" itemprop="datePublished">2021-10-12</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/public/categories/linux/">linux</a>►<a class="article-category-link" href="/public/categories/linux/ftp/">ftp</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -99,7 +92,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      ftp无法上传,无法下载,无法链接
+      linux一些命令缩写的含义
     </h1>
   
 
@@ -107,35 +100,34 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="一、文件无法上传"><a href="#一、文件无法上传" class="headerlink" title="一、文件无法上传"></a>一、文件无法上传</h3><ul>
-<li>辨别服务器端ftp主动与被动模式<br>检查/etc/vsftpd/vsftpd.conf<br><code>connect_from_port_20=YES #主动模式</code></li>
-<li>主动模式下，确保防火墙打开了端口20<br><code>firewall-cmd --permanent --add-port=20/tcp</code><br><code>firewall-cmd --reload #激活修改的配置</code><br>也可以选择关闭防火墙<br><code>systemctl stop firewalld</code></li>
-<li>转移目录所有权,将目标目录所有权给root用户<br><code>#假设向/home目录传输文件</code><br><code>ll /home</code><br><code>chown -R root /home</code></li>
-<li>确保/etc/vsftpd/vsftpd.conf配置中<br><code>write_enable=YES</code></li>
+        <p>vsftpd、firewalld、httpd等</p>
+<span id="more"></span>
+
+
+<h1 id="缩写全称"><a href="#缩写全称" class="headerlink" title="缩写全称"></a>缩写全称</h1><ul>
+<li>linux  <code>linux is not unix</code>  </li>
+<li>selinux<code>指secure linux</code></li>
+<li>ngin    <code>Engine X</code>  </li>
+<li>ftp     <code>文件传输协议 File Transfer Protocol</code></li>
+<li>vsftpd <code>very secure FTP daemon</code></li>
+<li>ssh      <code>安全外壳Secure Shell</code></li>
+<li>rpm      <code>红帽软件包管理器,Red-Hat Package Manager</code></li>
+<li>yum    <code>Yellow dog Updater, Modified,RPM软件包管理器</code></li>
 </ul>
-<h3 id="二、无法登录"><a href="#二、无法登录" class="headerlink" title="二、无法登录"></a>二、无法登录</h3><ul>
-<li>更改配置vsftpd.conf<br><code>#/etc/vsftpd/vsftpd.conf</code><br><code>userlist_enable=NO</code></li>
-<li>检查ftpusers,删除要登录的用户名</li>
-<li>检查user_list,添加要登录的用户名</li>
-<li>重启<br><code>systemctl restart vsftpd</code></li>
-</ul>
-<h3 id="三、Mac终端找不到ftp命令"><a href="#三、Mac终端找不到ftp命令" class="headerlink" title="三、Mac终端找不到ftp命令"></a>三、Mac终端找不到ftp命令</h3><ul>
-<li>安装ftp等工具<br><code>brew install inetutils</code></li>
-</ul>
-<h3 id="四、一些概念"><a href="#四、一些概念" class="headerlink" title="四、一些概念"></a>四、一些概念</h3><ul>
-<li>主动FTP:<br>命令连接：客户端 大于1024端口 &gt;&gt; 服务器 21端口<br>数据连接：服务器 客户端（大于1024的端口）&lt;&lt; 20端口</li>
-<li>被动FTP：<br>命令连接：客户端大于1024端口 &gt;&gt; 服务器 21端口<br>数据连接：客户端大于1024端口 &gt;&gt; 服务器大于1024端口</li>
+<p>#’d’的含义    </p>
+<ul>
+<li>执行程序xxxd <code>d指daemon</code><br>指能后台运行的进程<br>如systemd、vsftpd、firewalld等</li>
+<li>文件夹.conf.d  <code>d指directory</code><br>为了兼容以前的conf文件夹,加.d形成了新的配置文件夹</li>
+<li>描述drwxr-xr-x    <code>d指directory</code><br>d指directory，表示被描述的对象是目录，而非文件<br><code>用ll命令试试</code></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yujizhu.com/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/" data-id="ckuo5q42u0001o1vt8l834ysi" data-title="ftp无法上传,无法下载,无法链接" class="article-share-link">Share</a>
+      <a data-url="http://yujizhu.com/linux%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/2021/10/12/" data-id="ckuo8ghnz0003vjvt3nrth7t9" data-title="linux一些命令缩写的含义" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/public/tags/ftp/" rel="tag">ftp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/public/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/public/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/public/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
-
     </footer>
   </div>
   
@@ -143,9 +135,9 @@
 <nav id="article-nav">
   
   
-    <a href="/public/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/public/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">firewall防火墙的简单使用</div>
+      <div class="article-nav-title">ftp无法上传,无法下载,无法链接</div>
     </a>
   
 </nav>
@@ -204,7 +196,11 @@
       <ul>
         
           <li>
-            <a href="/public/%E5%AE%9E%E6%93%8Dftp%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/2021/10/12/">ftp无法上传,无法下载,无法链接</a>
+            <a href="/public/linux%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/2021/10/12/">linux一些命令缩写的含义</a>
+          </li>
+        
+          <li>
+            <a href="/public/ftp%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0,%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD,%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/2021/10/12/">ftp无法上传,无法下载,无法链接</a>
           </li>
         
           <li>
