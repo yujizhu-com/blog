@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git</title>
+    <url>/public/Git/2021/11/08/</url>
+    <content><![CDATA[<p>代码找回、远程仓库修改、其他命令</p>
+<span id="more"></span>
+<h1 id="一、git本地丢失代码找回"><a href="#一、git本地丢失代码找回" class="headerlink" title="一、git本地丢失代码找回"></a>一、git本地丢失代码找回</h1><p>终端A执行：<code>git reflog</code><br>终端B执行：<code>git reset --hard HEAD@&#123;7&#125;</code></p>
+<h1 id="二、修改本地仓库的远程地址"><a href="#二、修改本地仓库的远程地址" class="headerlink" title="二、修改本地仓库的远程地址"></a>二、修改本地仓库的远程地址</h1><ul>
+<li>查看当前的远程仓库<br><code>git remote -v</code>  </li>
+<li>修改为想要设置的远程仓库<br><code>git remote set-url origin https://where you want to put your repository to.git</code>  </li>
+<li>验证一下<br><code>git remote -v</code>  </li>
+</ul>
+<h1 id="三、其他命令"><a href="#三、其他命令" class="headerlink" title="三、其他命令"></a>三、其他命令</h1><ul>
+<li><code>git add xxx</code><br>前提:仓库已具有xxx文件  </li>
+<li><code>git config commit</code><br>前提:git config –global user.name=”” user.email=””</li>
+<li><code>git push xxx</code><br>前提:git remote master url 已创建分支  </li>
+</ul>
+<p>注：<br>当前github已不支持用户名密码push,要使用token/ssh<br>token:可访问公共仓库、提交状态、部署状态</p>
+]]></content>
+      <categories>
+        <category>git</category>
+        <category>cli</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>cli</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JetBrains免费破解</title>
+    <url>/public/JetBrains%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3/2021/11/08/</url>
+    <content><![CDATA[<p>用插件重置jetbrains</p>
+<span id="more"></span>
+<h1 id="一、插件重置jetbrains"><a href="#一、插件重置jetbrains" class="headerlink" title="一、插件重置jetbrains"></a>一、插件重置jetbrains</h1><ul>
+<li>找到窗口<br><code>WebStorm/Preferences-&gt; Plugins-&gt;设置-&gt;Manage Plugin Repositories</code></li>
+<li>添加第三方插件仓库地址：<br><code>https://plugins.zhile.io</code></li>
+<li>在窗口WebStorm/Preferences-&gt;Plugins/Marketplace搜索并安装<br><code>IDE Eval Reset </code></li>
+<li>执行<br><code>Help-&gt;Eval Rest</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>jetbrains</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>jetbrains</tag>
+        <tag>破解</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PuzzleSDK</title>
     <url>/public/PuzzleSDK/2021/10/12/</url>
     <content><![CDATA[<p>目录<br>一、PuzzleSDK<br>1.关键字<br>2.1按专题        2.2 按目录       2.3按类型<br>二、SDK维护<br>三、规范<br>四、常用概念的定义</p>
@@ -231,6 +279,29 @@
       </tags>
   </entry>
   <entry>
+    <title>XCode,Cocos2dx接入Box2d</title>
+    <url>/public/XCode%20Cocos2dx%E6%8E%A5%E5%85%A5Box2d/2021/11/08/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h1 id="XCode导入Box2D源码库"><a href="#XCode导入Box2D源码库" class="headerlink" title="XCode导入Box2D源码库"></a>XCode导入Box2D源码库</h1><h2 id="1-删除Cocos2dx自带的Box2d"><a href="#1-删除Cocos2dx自带的Box2d" class="headerlink" title="1.删除Cocos2dx自带的Box2d"></a>1.删除Cocos2dx自带的Box2d</h2><p>a.双击项目,我这里是“cocos2d_tests”，打开配置页。<br>找到配置中“User Header Search Paths”项，该项是项目使用项目以外的包进行调试和发布的路径。双击该项能同时修改“Debug”和”Release”的路径。找到项目自带的的Box2D路径，删除。</p>
+<p>b.双击项目库”cocos2d_libs.xcodeproj”，打开配置页。<br>找到配置中“User Header Search Paths”项，该项是项目使用项目以外的包进行调试和发布的路径。双击该项能同时修改“Debug”和”Release”的路径。找到项目自带的的Box2D路径，删除。</p>
+<p>c.打开项目下Frameworks文件夹，删除含有Box2D的字眼的“XXX.framework”项。</p>
+<h2 id="2-导入源码并配置"><a href="#2-导入源码并配置" class="headerlink" title="2.导入源码并配置"></a>2.导入源码并配置</h2><p>a .下载Box2d源码，文件名“Box2D-master”</p>
+<p>b.把文件夹“Box2D-master”拖入”cocos2d_libs.xcodeproj”下的”external“文件夹下。</p>
+<p>c.双击项目，打开配置页。<br>找到配置中“User Header Search Paths”项，参照cocos2dX自带库的路径，把“Box2D-master”的路径写进去。</p>
+<p>d.双击项目库，打开配置页。<br>找到配置中“User Header Search Paths”项，参照cocos2dX自带库的路径，把“Box2D-master”的路径写进去。</p>
+<p>e.完成。</p>
+]]></content>
+      <categories>
+        <category>cocos</category>
+        <category>box2d</category>
+      </categories>
+      <tags>
+        <tag>cocos2d</tag>
+        <tag>box2d</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>firewall防火墙的简单使用</title>
     <url>/public/firewall%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/</url>
     <content><![CDATA[<p>启动、刷新、服务管理、端口管理、查看状态</p>
@@ -333,6 +404,73 @@
         <tag>linux</tag>
         <tag>ftp</tag>
         <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机常见概念</title>
+    <url>/public/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/2021/11/08/</url>
+    <content><![CDATA[<p>函数、闭包、范式</p>
+<span id="more"></span>
+<h1 id="一、GC"><a href="#一、GC" class="headerlink" title="一、GC"></a>一、GC</h1><p>Garbage Collection垃圾回收机制</p>
+<h1 id="二、编程范式的发展"><a href="#二、编程范式的发展" class="headerlink" title="二、编程范式的发展"></a>二、编程范式的发展</h1><p>非结构化 60年代(195x) goto语句泛滥<br>结构化、函数式编程     70年代<br>面向对象    90年代<br>多范式融合 (21世纪20年代)    </p>
+<h1 id="三、语言的主流范式"><a href="#三、语言的主流范式" class="headerlink" title="三、语言的主流范式"></a>三、语言的主流范式</h1><p>C 结构化<br>Java 面向对象</p>
+<h1 id="四、概念"><a href="#四、概念" class="headerlink" title="四、概念"></a>四、概念</h1><ul>
+<li>编程范式<br>如何编写程序的方法论</li>
+<li>结构化编程<br>把运算过程尽量写成一系列嵌套的函数调用<br>也称过程式编程,面向过程编程</li>
+<li>函数<br>函数式编程中的函数不是结构化编程中的函数，而是数学中的函数，结构化编程中    的函数是一个过程（Procedure） </li>
+<li>普通程序<br>程序 = 数据结构 + 算法</li>
+<li>函数式编程程序<br>程序 = 数据 + 函数</li>
+<li>高阶函数<br>高阶函数，是指一种比较特殊的函数，它们可以接收函数作为输入，或者返回一个    函数作为输出</li>
+<li>闭包<br>由函数及其相关的引用环境组合而成的实体，即闭包 = 函数 + 引用环境<br>闭包是一种保护私有变量的机制，在函数执行时形成私有的作用域，保护里面的私    有变量不受外界干扰。</li>
+<li>DDD<br>领域驱动设计, Domain-Driven Design</li>
+<li>函数式编程<br>即只关注做什么而不是怎么做<br>函数式编程不仅仅局限于声明式编程。<br>函数式编程最重要的特点是“函数第一位”，即函数可以出现在任何地方，比如可以把函数作为参数传递给另一个函数，不仅如此你还可以将函数作为返回值</li>
+<li>声明式编程<br>如SQL编程<br>告诉计算机应该做什么，但不指定具体要怎么做<br>不需要创建变量用来存储数据<br>它不包含循环控制的代码如 for， while  <h1 id="五、面向对象建模四步"><a href="#五、面向对象建模四步" class="headerlink" title="五、面向对象建模四步"></a>五、面向对象建模四步</h1>需求分析建模<br>面向对象分析（OOA）<br>面向对象设计（OOD）<br>面向对象编码（OOP）<h1 id="六、命令式编程"><a href="#六、命令式编程" class="headerlink" title="六、命令式编程"></a>六、命令式编程</h1>又称指令式编程<br>与声明式对立<h1 id="七、声明式编程-子范式"><a href="#七、声明式编程-子范式" class="headerlink" title="七、声明式编程-子范式"></a>七、声明式编程-子范式</h1></li>
+<li>约束式     </li>
+<li>函数式     </li>
+<li>逻辑式<br>如Prolog声明关系并且对关系进行提问</li>
+<li>领域专属语言<ul>
+<li>声明式领域专属语言（DSLs）包括</li>
+<li>语法分析器yacc，</li>
+<li>编译说明语言Make，</li>
+<li>管理配置语言Puppet，</li>
+<li>正则表达式和SQL的一些子集（例如Select queries等）</li>
+<li>很多文本标记语言,如HTML、MXML、XAML和XSLT也是声明式的</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>函数</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/public/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%AB%AF%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/2021/11/08/</url>
+    <content><![CDATA[<h1 id="问"><a href="#问" class="headerlink" title="问:"></a>问:</h1><p>都说端口号是操作系统进行抽象，用来定位一个进程。<br>当一台主机上有两张网卡时，每张网卡上绑定了一个IP地址。<br>那么如果访问不同IP地址的同一端口，比如80，应该不会定位到同一个程序吧。<br>那么端口号就应该是针对于每一张网卡进行的进程抽象，而不是操作系统对每一个进程的抽象吧?  </p>
+<h1 id="答"><a href="#答" class="headerlink" title="答:"></a>答:</h1><p>当计算机接收到报文时，需要将这个报文递交(Deliver)给某个特定的进程。<br>当有(1.1.1.1，50007)——–165364组合报文到达操作系统时,1.1.1.1 是IP地址，50007是端口号,165364是进程号<br>稍后当操作系统TCP/IP协议栈接收到一个IP报文，通过提取目的IP地址(位于IP头)、目的端口号(位于TCP头)，这两者的组合恰好为(1.1.1.1，50007)。<br>操作系统查询一下小本子，立马就得知这是(进程ID= 168324)进程A的，然后通知该进程A前来将报文取走。<br>进程B也想如法炮制：Bind (‘1.1.1.1’, 50007)，很遗憾，操作系统拒绝了。<br>拒绝的消息如下：“builtins.OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。”<br>意味着(1.1.1.1， 50007)这个组合能唯一识别一个进程，这两者的组合就是一个主键<br>通俗地说，在数据库管理系统，主键可以唯一锁定一条记录。<br>进程B(进程ID= 168323)心有不甘，发现计算机还有其它接口地址2.2.2.2，于是通过Bind (‘2.2.2.2’, 50007)，这次成功了。<br>操作系统老爷爷又颤颤巍巍掏出小本子记录了下来： (2.2.2.2，50007)——–168323<br>这样当有(2.2.2.2 ， 50007)组合报文到达时，操作系统可以将其转交给(进程号= 168323)进程B。<br>问题来了，进程A与进程B是什么关系？ 进程A、B可以是代码完全不同的程序，也可以是代码相同的程序，在自己独立的内存空间运行的不同实列(Instance)。<br>好比你同时打开多个Word程序，这些Word程序使用相同的代码，但是他们是多个Word实例。<br>问题又来了，如果进程A的代码真的是那样编码，如果放到其它计算机上执行，会遇到问题，因为其它计算机的IP地址可能≠1.1.1.1。为了提高代码的健壮性、可移植性，通常会使用这样的代码： Bind (‘ ’, 50007) 其中‘’表示任何IP地址。<br>换句话说，不Care计算机的接口IP地址。<br>这个IP地址可以是127.0.0.1，也可以是1.1.1.1， 也可以是192.168.1.1，随便多少都行。<br>那么这个程序可以放到任何计算机上执行。<br>在同一台机器上一个进程B也这样执行：Bind (‘ ’, 50007)，可以哇？ 不可以，因为与进程A冲突！<br>进程B可以Bind (‘ 1.1.1.1’, 50007)，可以哇？ 同样不可以，依然与进程A冲突。因为1.1.1.1是所有IP地址的子集。<br>进程B心慌了，那怎么可以呢？<br>操作系统老爷爷不紧不慢地说，只要别再使用端口50007就可以了。<br>进程B于是执行代码如下： Bind (‘ ’, 50008)， 可以哇？ 恭喜你，当然可以！<br>通常服务器代码，都使用类似Bind (‘ ’, 50007) 方式执行，所以50007这个端口号可以唯一识别一个进程，这就是端口号可以唯一识别进程号的由来！  </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>配置SSL证书</title>
+    <url>/public/%E9%85%8D%E7%BD%AESSL%E8%AF%81%E4%B9%A6/2021/11/08/</url>
+    <content><![CDATA[<p>nginx配置ssl</p>
+<span id="more"></span>
+<h1 id="一、SSL证书"><a href="#一、SSL证书" class="headerlink" title="一、SSL证书"></a>一、SSL证书</h1><ul>
+<li>vim打开nginx.conf</li>
+<li>找到TLS,配置如下属性  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssl_certificate &quot;/xxx/xxx/xxx.crt&quot;;  </span><br><span class="line">ssl_certificate_key &quot;/xxx/xxx/xxx.key&quot;;  </span><br><span class="line">location / &#123;    </span><br><span class="line">  proxy_pass http://localhost:4000;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>输入:wq!,强制写入并退出vim</li>
+</ul>
+]]></content>
+      <categories>
+        <category>ssl</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
       </tags>
   </entry>
 </search>

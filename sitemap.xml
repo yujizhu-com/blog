@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yujizhu.com/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%AB%AF%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/2021/11/08/</loc>
+    
+    <lastmod>2021-11-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/2021/11/08/</loc>
+    
+    <lastmod>2021-11-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/JetBrains%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3/2021/11/08/</loc>
+    
+    <lastmod>2021-11-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/%E9%85%8D%E7%BD%AESSL%E8%AF%81%E4%B9%A6/2021/11/08/</loc>
+    
+    <lastmod>2021-11-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/Git/2021/11/08/</loc>
+    
+    <lastmod>2021-11-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/XCode%20Cocos2dx%E6%8E%A5%E5%85%A5Box2d/2021/11/08/</loc>
+    
+    <lastmod>2021-11-08</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yujizhu.com/commonweal/404.html</loc>
     
     <lastmod>2021-10-14</lastmod>
@@ -74,64 +116,127 @@
 
   <url>
     <loc>http://yujizhu.com/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>http://yujizhu.com/tags/git/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/tags/cli/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/tags/jetbrains/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/tags/%E7%A0%B4%E8%A7%A3/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yujizhu.com/tags/red/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/tags/puzzle/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/tags/cocos2d/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/tags/box2d/</loc>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/tags/linux/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/tags/ftp/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/tags/%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/tags/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/tags/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/tags/%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/tags/ssl/</loc>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -139,50 +244,113 @@
 
   
   <url>
+    <loc>http://yujizhu.com/categories/git/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/jetbrains/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yujizhu.com/categories/red/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/cocos/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/git/cli/</loc>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/categories/linux/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yujizhu.com/categories/red/puzzle/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <loc>http://yujizhu.com/categories/jetbrains/%E7%A0%B4%E8%A7%A3/</loc>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/red/puzzle/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/ssl/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/cocos/box2d/</loc>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/categories/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/categories/linux/ftp/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yujizhu.com/categories/ftp/</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/%E7%BC%96%E7%A8%8B/%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
