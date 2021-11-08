@@ -92,7 +92,7 @@
         <li class="menu-item menu-item-about"><a href="/public/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/public/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">17</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/public/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">18</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/public/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/public/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">11</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/public/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
@@ -162,7 +162,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/public/archives/">
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -648,94 +648,6 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yujizhu.com/XCode%20Cocos2dx%E6%8E%A5%E5%85%A5Box2d/2021/11/08/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/public/images/avatar.gif">
-      <meta itemprop="name" content="yujizhu">
-      <meta itemprop="description" content="花开花落岂由之,当有豪情似旧时">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小桥流水">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/public/XCode%20Cocos2dx%E6%8E%A5%E5%85%A5Box2d/2021/11/08/" class="post-title-link" itemprop="url">XCode,Cocos2dx接入Box2d</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-11-08 21:52:35" itemprop="dateCreated datePublished" datetime="2021-11-08T21:52:35+08:00">2021-11-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/public/categories/cocos/" itemprop="url" rel="index"><span itemprop="name">cocos</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/public/categories/cocos/box2d/" itemprop="url" rel="index"><span itemprop="name">box2d</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <span id="more"></span>
-
-<h1 id="XCode导入Box2D源码库"><a href="#XCode导入Box2D源码库" class="headerlink" title="XCode导入Box2D源码库"></a>XCode导入Box2D源码库</h1><h2 id="1-删除Cocos2dx自带的Box2d"><a href="#1-删除Cocos2dx自带的Box2d" class="headerlink" title="1.删除Cocos2dx自带的Box2d"></a>1.删除Cocos2dx自带的Box2d</h2><p>a.双击项目,我这里是“cocos2d_tests”，打开配置页。<br>找到配置中“User Header Search Paths”项，该项是项目使用项目以外的包进行调试和发布的路径。双击该项能同时修改“Debug”和”Release”的路径。找到项目自带的的Box2D路径，删除。</p>
-<p>b.双击项目库”cocos2d_libs.xcodeproj”，打开配置页。<br>找到配置中“User Header Search Paths”项，该项是项目使用项目以外的包进行调试和发布的路径。双击该项能同时修改“Debug”和”Release”的路径。找到项目自带的的Box2D路径，删除。</p>
-<p>c.打开项目下Frameworks文件夹，删除含有Box2D的字眼的“XXX.framework”项。</p>
-<h2 id="2-导入源码并配置"><a href="#2-导入源码并配置" class="headerlink" title="2.导入源码并配置"></a>2.导入源码并配置</h2><p>a .下载Box2d源码，文件名“Box2D-master”</p>
-<p>b.把文件夹“Box2D-master”拖入”cocos2d_libs.xcodeproj”下的”external“文件夹下。</p>
-<p>c.双击项目，打开配置页。<br>找到配置中“User Header Search Paths”项，参照cocos2dX自带库的路径，把“Box2D-master”的路径写进去。</p>
-<p>d.双击项目库，打开配置页。<br>找到配置中“User Header Search Paths”项，参照cocos2dX自带库的路径，把“Box2D-master”的路径写进去。</p>
-<p>e.完成。</p>
-
-      
-    </div>
-
-    
-    
-    
-      
-
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://yujizhu.com/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%AB%AF%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/2021/11/08/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -786,8 +698,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <span id="more"></span>
-<h1 id="问"><a href="#问" class="headerlink" title="问:"></a>问:</h1><p>都说端口号是操作系统进行抽象，用来定位一个进程。<br>当一台主机上有两张网卡时，每张网卡上绑定了一个IP地址。<br>那么如果访问不同IP地址的同一端口，比如80，应该不会定位到同一个程序吧。<br>那么端口号就应该是针对于每一张网卡进行的进程抽象，而不是操作系统对每一个进程的抽象吧?  </p>
+          <h1 id="问"><a href="#问" class="headerlink" title="问:"></a>问:</h1><p>都说端口号是操作系统进行抽象，用来定位一个进程。<br>当一台主机上有两张网卡时，每张网卡上绑定了一个IP地址。<br>那么如果访问不同IP地址的同一端口，比如80，应该不会定位到同一个程序吧。<br>那么端口号就应该是针对于每一张网卡进行的进程抽象，而不是操作系统对每一个进程的抽象吧?  </p>
 <h1 id="答"><a href="#答" class="headerlink" title="答:"></a>答:</h1><p>当计算机接收到报文时，需要将这个报文递交(Deliver)给某个特定的进程。<br>当有(1.1.1.1，50007)——–165364组合报文到达操作系统时,1.1.1.1 是IP地址，50007是端口号,165364是进程号<br>稍后当操作系统TCP/IP协议栈接收到一个IP报文，通过提取目的IP地址(位于IP头)、目的端口号(位于TCP头)，这两者的组合恰好为(1.1.1.1，50007)。<br>操作系统查询一下小本子，立马就得知这是(进程ID= 168324)进程A的，然后通知该进程A前来将报文取走。<br>进程B也想如法炮制：Bind (‘1.1.1.1’, 50007)，很遗憾，操作系统拒绝了。<br>拒绝的消息如下：“builtins.OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。”<br>意味着(1.1.1.1， 50007)这个组合能唯一识别一个进程，这两者的组合就是一个主键<br>通俗地说，在数据库管理系统，主键可以唯一锁定一条记录。<br>进程B(进程ID= 168323)心有不甘，发现计算机还有其它接口地址2.2.2.2，于是通过Bind (‘2.2.2.2’, 50007)，这次成功了。<br>操作系统老爷爷又颤颤巍巍掏出小本子记录了下来： (2.2.2.2，50007)——–168323<br>这样当有(2.2.2.2 ， 50007)组合报文到达时，操作系统可以将其转交给(进程号= 168323)进程B。<br>问题来了，进程A与进程B是什么关系？ 进程A、B可以是代码完全不同的程序，也可以是代码相同的程序，在自己独立的内存空间运行的不同实列(Instance)。<br>好比你同时打开多个Word程序，这些Word程序使用相同的代码，但是他们是多个Word实例。<br>问题又来了，如果进程A的代码真的是那样编码，如果放到其它计算机上执行，会遇到问题，因为其它计算机的IP地址可能≠1.1.1.1。为了提高代码的健壮性、可移植性，通常会使用这样的代码： Bind (‘ ’, 50007) 其中‘’表示任何IP地址。<br>换句话说，不Care计算机的接口IP地址。<br>这个IP地址可以是127.0.0.1，也可以是1.1.1.1， 也可以是192.168.1.1，随便多少都行。<br>那么这个程序可以放到任何计算机上执行。<br>在同一台机器上一个进程B也这样执行：Bind (‘ ’, 50007)，可以哇？ 不可以，因为与进程A冲突！<br>进程B可以Bind (‘ 1.1.1.1’, 50007)，可以哇？ 同样不可以，依然与进程A冲突。因为1.1.1.1是所有IP地址的子集。<br>进程B心慌了，那怎么可以呢？<br>操作系统老爷爷不紧不慢地说，只要别再使用端口50007就可以了。<br>进程B于是执行代码如下： Bind (‘ ’, 50008)， 可以哇？ 恭喜你，当然可以！<br>通常服务器代码，都使用类似Bind (‘ ’, 50007) 方式执行，所以50007这个端口号可以唯一识别一个进程，这就是端口号可以唯一识别进程号的由来！  </p>
 
       

@@ -37,13 +37,6 @@
   </url>
   
   <url>
-    <loc>http://yujizhu.com/XCode%20Cocos2dx%E6%8E%A5%E5%85%A5Box2d/2021/11/08/</loc>
-    
-    <lastmod>2021-11-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yujizhu.com/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%AB%AF%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/2021/11/08/</loc>
     
     <lastmod>2021-11-08</lastmod>
@@ -300,13 +293,6 @@
   </url>
   
   <url>
-    <loc>http://yujizhu.com/categories/jetbrains/%E7%A0%B4%E8%A7%A3/</loc>
-    <lastmod>2021-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yujizhu.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
@@ -314,14 +300,14 @@
   </url>
   
   <url>
-    <loc>http://yujizhu.com/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <loc>http://yujizhu.com/categories/jetbrains/%E7%A0%B4%E8%A7%A3/</loc>
     <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yujizhu.com/categories/red/puzzle/</loc>
+    <loc>http://yujizhu.com/categories/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -336,6 +322,13 @@
   
   <url>
     <loc>http://yujizhu.com/categories/ssl/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/red/puzzle/</loc>
     <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
