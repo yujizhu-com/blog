@@ -265,21 +265,7 @@
   </url>
   
   <url>
-    <loc>http://yujizhu.com/categories/red/</loc>
-    <lastmod>2022-02-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yujizhu.com/categories/cocos/box2d/</loc>
-    <lastmod>2022-02-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yujizhu.com/categories/linux/</loc>
     <lastmod>2022-02-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -293,13 +279,6 @@
   </url>
   
   <url>
-    <loc>http://yujizhu.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2022-02-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yujizhu.com/categories/jetbrains/%E7%A0%B4%E8%A7%A3/</loc>
     <lastmod>2022-02-27</lastmod>
     <changefreq>daily</changefreq>
@@ -307,7 +286,42 @@
   </url>
   
   <url>
+    <loc>http://yujizhu.com/categories/red/</loc>
+    <lastmod>2022-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/linux/</loc>
+    <lastmod>2022-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/red/puzzle/</loc>
+    <lastmod>2022-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2022-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yujizhu.com/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2022-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
     <lastmod>2022-02-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -322,20 +336,6 @@
   
   <url>
     <loc>http://yujizhu.com/categories/ssl/</loc>
-    <lastmod>2022-02-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yujizhu.com/categories/red/puzzle/</loc>
-    <lastmod>2022-02-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yujizhu.com/categories/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
     <lastmod>2022-02-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
