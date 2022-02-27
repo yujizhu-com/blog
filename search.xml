@@ -381,46 +381,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>分组对象化</title>
-    <url>/public/%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/2022/02/27/</url>
-    <content><![CDATA[<p>传统分组，对象化分组</p>
-<span id="more"></span>
-
-<h3 id="1-分组为什么要对象化"><a href="#1-分组为什么要对象化" class="headerlink" title="1.分组为什么要对象化"></a>1.分组为什么要对象化</h3><pre><code>传统的分组方法
-    用户被分配了一个分组ID
-    在程序中的各个层次和环节，通过if else判断分组ID，给用户应用不同的逻辑
-传统的弊端
-    if else过多
-    逻辑复杂、混乱
-    代码改动风险大
-    代码块不美观
-    不利于检索
-    没有和外部逻辑解耦
-对象化的分组
-    每个分组对象内置一个ID，都有自己的身份，对象通过对比内置ID与外部ID，自己决定是否激活逻辑
-    设计：
-</code></pre>
-<h3 id="2-分组对象设计"><a href="#2-分组对象设计" class="headerlink" title="2.分组对象设计"></a>2.分组对象设计</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GroupX</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> innerID = X ;</span><br><span class="line">    <span class="keyword">bool</span> enable = <span class="literal">false</span> ;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setEnable</span><span class="params">(<span class="keyword">int</span> ID)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        enable = ID == innerID ;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doSomething</span><span class="params">(lambda)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(enable)</span><br><span class="line">            lambda</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doSomething2</span><span class="params">(lambda)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(enable)</span><br><span class="line">            lambda</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-举例"><a href="#3-举例" class="headerlink" title="3.举例"></a>3.举例</h3><pre><code>    例：
-        设  ID = 2
-        通过执行：
-            group1.setEnable(ID) ;
-            group2.setEnable(ID) ;
-            group3.setEnable(ID) ;
-        那么最终只有group2被激活，group1、3因为ID不匹配未激活 ；
-        最终，以下代码，只有group2的逻辑被执行，1、3的逻辑不会执行
-            group1.doSomething(lambda)
-            group2.doSomething(lambda)
-            group3.doSomething(lambda)
-    要想看在工程中索引某个分组，那么直接搜索group2即可
-</code></pre>
-]]></content>
-      <categories>
-        <category>puzzle</category>
-      </categories>
-  </entry>
-  <entry>
     <title>解决Transmit的乱码问题</title>
     <url>/public/%E8%A7%A3%E5%86%B3Transmit%E7%9A%84%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/</url>
     <content><![CDATA[<p>Transmit文件名乱码</p>
@@ -514,5 +474,45 @@
       <tags>
         <tag>ssl</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>分组对象化</title>
+    <url>/public/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/2022/02/27/</url>
+    <content><![CDATA[<p>传统分组，对象化分组</p>
+<span id="more"></span>
+
+<h3 id="1-分组为什么要对象化"><a href="#1-分组为什么要对象化" class="headerlink" title="1.分组为什么要对象化"></a>1.分组为什么要对象化</h3><pre><code>传统的分组方法
+    用户被分配了一个分组ID
+    在程序中的各个层次和环节，通过if else判断分组ID，给用户应用不同的逻辑
+传统的弊端
+    if else过多
+    逻辑复杂、混乱
+    代码改动风险大
+    代码块不美观
+    不利于检索
+    没有和外部逻辑解耦
+对象化的分组
+    每个分组对象内置一个ID，都有自己的身份，对象通过对比内置ID与外部ID，自己决定是否激活逻辑
+    设计：
+</code></pre>
+<h3 id="2-分组对象设计"><a href="#2-分组对象设计" class="headerlink" title="2.分组对象设计"></a>2.分组对象设计</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GroupX</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> innerID = X ;</span><br><span class="line">    <span class="keyword">bool</span> enable = <span class="literal">false</span> ;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setEnable</span><span class="params">(<span class="keyword">int</span> ID)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        enable = ID == innerID ;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doSomething</span><span class="params">(lambda)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(enable)</span><br><span class="line">            lambda</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doSomething2</span><span class="params">(lambda)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(enable)</span><br><span class="line">            lambda</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-举例"><a href="#3-举例" class="headerlink" title="3.举例"></a>3.举例</h3><pre><code>    例：
+        设  ID = 2
+        通过执行：
+            group1.setEnable(ID) ;
+            group2.setEnable(ID) ;
+            group3.setEnable(ID) ;
+        那么最终只有group2被激活，group1、3因为ID不匹配未激活 ；
+        最终，以下代码，只有group2的逻辑被执行，1、3的逻辑不会执行
+            group1.doSomething(lambda)
+            group2.doSomething(lambda)
+            group3.doSomething(lambda)
+    要想看在工程中索引某个分组，那么直接搜索group2即可
+</code></pre>
+]]></content>
+      <categories>
+        <category>puzzle</category>
+      </categories>
   </entry>
 </search>
