@@ -91,8 +91,8 @@
         <li class="menu-item menu-item-home"><a href="/public/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
         <li class="menu-item menu-item-about"><a href="/public/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/public/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">15</span></a></li>
-        <li class="menu-item menu-item-categories"><a href="/public/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">16</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/public/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">11</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/public/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">17</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/public/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/public/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
@@ -162,13 +162,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/public/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/public/categories/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -213,6 +213,110 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yujizhu.com/%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/2022/02/27/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/public/images/avatar.gif">
+      <meta itemprop="name" content="yujizhu">
+      <meta itemprop="description" content="花开花落岂由之,当有豪情似旧时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小桥流水">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/public/%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/2022/02/27/" class="post-title-link" itemprop="url">分组对象化</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-27 20:30:10" itemprop="dateCreated datePublished" datetime="2022-02-27T20:30:10+08:00">2022-02-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/public/categories/puzzle/" itemprop="url" rel="index"><span itemprop="name">puzzle</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>传统分组，对象化分组<br>&lt;–! more –&gt;</p>
+<h3 id="1-分组为什么要对象化"><a href="#1-分组为什么要对象化" class="headerlink" title="1.分组为什么要对象化"></a>1.分组为什么要对象化</h3><pre><code>传统的分组方法
+    用户被分配了一个分组ID
+    在程序中的各个层次和环节，通过if else判断分组ID，给用户应用不同的逻辑
+传统的弊端
+    if else过多
+    逻辑复杂、混乱
+    代码改动风险大
+    代码块不美观
+    不利于检索
+    没有和外部逻辑解耦
+对象化的分组
+    每个分组对象内置一个ID，都有自己的身份，对象通过对比内置ID与外部ID，自己决定是否激活逻辑
+    设计：
+</code></pre>
+<h3 id="2-分组对象设计"><a href="#2-分组对象设计" class="headerlink" title="2.分组对象设计"></a>2.分组对象设计</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GroupX</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> innerID = X ;</span><br><span class="line">    <span class="keyword">bool</span> enable = <span class="literal">false</span> ;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setEnable</span><span class="params">(<span class="keyword">int</span> ID)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        enable = ID == innerID ;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doSomething</span><span class="params">(lambda)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(enable)</span><br><span class="line">            lambda</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doSomething2</span><span class="params">(lambda)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(enable)</span><br><span class="line">            lambda</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-举例"><a href="#3-举例" class="headerlink" title="3.举例"></a>3.举例</h3><pre><code>    例：
+        设  ID = 2
+        通过执行：
+            group1.setEnable(ID) ;
+            group2.setEnable(ID) ;
+            group3.setEnable(ID) ;
+        那么最终只有group2被激活，group1、3因为ID不匹配未激活 ；
+        最终，以下代码，只有group2的逻辑被执行，1、3的逻辑不会执行
+            group1.doSomething(lambda)
+            group2.doSomething(lambda)
+            group3.doSomething(lambda)
+    要想看在工程中索引某个分组，那么直接搜索group2即可
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
