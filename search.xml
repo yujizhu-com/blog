@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Cocos2dx接入Box2d</title>
+    <title>Cocos2d导入Box2D源码库</title>
     <url>/public/Cocos2dx%E6%8E%A5%E5%85%A5Box2d/2021/11/08/</url>
-    <content><![CDATA[<p>box2d,code</p>
+    <content><![CDATA[<p>XCode导入Box2D源码库</p>
 <span id="more"></span>
 
 <h1 id="XCode导入Box2D源码库"><a href="#XCode导入Box2D源码库" class="headerlink" title="XCode导入Box2D源码库"></a>XCode导入Box2D源码库</h1><h2 id="1-删除Cocos2dx自带的Box2d"><a href="#1-删除Cocos2dx自带的Box2d" class="headerlink" title="1.删除Cocos2dx自带的Box2d"></a>1.删除Cocos2dx自带的Box2d</h2><p>a.双击项目,我这里是“cocos2d_tests”，打开配置页。<br>找到配置中“User Header Search Paths”项，该项是项目使用项目以外的包进行调试和发布的路径。双击该项能同时修改“Debug”和”Release”的路径。找到项目自带的的Box2D路径，删除。</p>
@@ -16,13 +16,9 @@
 <p>e.完成。</p>
 ]]></content>
       <categories>
-        <category>cocos</category>
+        <category>cocos2d</category>
         <category>box2d</category>
       </categories>
-      <tags>
-        <tag>cocos2d</tag>
-        <tag>box2d</tag>
-      </tags>
   </entry>
   <entry>
     <title>Git</title>
@@ -70,7 +66,14 @@
   <entry>
     <title>PuzzleSDK</title>
     <url>/public/PuzzleSDK/2021/10/12/</url>
-    <content><![CDATA[<p>目录<br>一、PuzzleSDK<br>1.关键字<br>2.1按专题        2.2 按目录       2.3按类型<br>二、SDK维护<br>三、规范<br>四、常用概念的定义</p>
+    <content><![CDATA[<p>目录<br>一、PuzzleSDK</p>
+<ul>
+<li>1.关键字  </li>
+<li>2.1按专题       </li>
+<li>2.2 按目录   </li>
+<li>2.3按类型  </li>
+</ul>
+<p>二、SDK维护<br>三、规范<br>四、常用概念的定义</p>
 <span id="more"></span>
 
 
@@ -289,13 +292,8 @@
 </code></pre>
 ]]></content>
       <categories>
-        <category>red</category>
-        <category>puzzle</category>
+        <category>红海无限</category>
       </categories>
-      <tags>
-        <tag>red</tag>
-        <tag>puzzle</tag>
-      </tags>
   </entry>
   <entry>
     <title>firewall防火墙的简单使用</title>
@@ -381,6 +379,41 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Elias gamma code(保加利亚码)</title>
+    <url>/public/%E4%BB%A5%E5%88%A9%E4%BA%9A%E5%8A%A0%E7%8E%9B%E7%A0%81/2022/03/02/</url>
+    <content><![CDATA[<p>二进制编码，Elias gamma code(保加利亚码)</p>
+<span id="more"></span>
+<h1 id="Elias-gamma-code-保加利亚码"><a href="#Elias-gamma-code-保加利亚码" class="headerlink" title="Elias gamma code(保加利亚码)"></a>Elias gamma code(保加利亚码)</h1><p>1.简介</p>
+<p>Elias gamma code 是一种用于正整数的通用编码，由Peter Elias发明。常被用于无法事先得知上界的正整数，即一种变长编码方式。<br>CocosBuilder的ccb文件中的整数正是采用了这种编码方式，被编码到了ccbi文件中(ccbi是二进制文件)。<br>在Cocos2dx引擎中，CCBReader利用了Elias gamma code 的解码方式，将ccbi文件中的整数解析出来。</p>
+<p>2.名词解释</p>
+<p>有效位：一个二进制数从左往右第一个为1的位及其之后所有位叫有效位，其余称无效位，如：0 000 1 0001<br>floor：向下取整，即[X,X+1)区间中的所有数都取X;</p>
+<p>3.编码原理</p>
+<p>我们都知道，int变量通常占4个字节(byte)，每个字节8位(bit),共占32位，在计算机中以二进制存储。如果能剔除所有二进制数无效位，再将剩下有效位 紧密排列写进二进制文件里，就可以大大减少空间占用。这就是原理，很简单。</p>
+<p>举个栗子：<br>剔除前:(17,11)10=(0000 0000 000 1 0001 ,0000 0000 0000 1011)2—-&gt;剔除后 (1 0001,1011)2</p>
+<p>我们看到17的有效位个数为 5，无效位个数为27。11的有效位个数是 4，无效位个数是28。<br>然后对17和9剔除无效位，剔除后共占9位，剔除前，两个二进制数占了64位。</p>
+<p>但是又考虑到解码时必须指明被编码了的有效位个数,不然解码器不知道应该读到哪一位为止。还要进行进一步处理，即在二进制数的 有效位 前 放置 [有效位个数-1] 个0，此时编码完成。<br>接着上面的例子，在17前加 4个0，在11前加 3个0。</p>
+<p>(1 0001,1011)2—-&gt;编码结果：(0 000 1 0001， 000 1011 )2</p>
+<p>最终，只用16位对原64位的两个数完成了编码。</p>
+<p>4.解码原理</p>
+<p>为什么加的0要比有效位个数少 1 ？ 跟解码原理有关。<br>解码时，从左往右读二进制串，一次读一位，边读边累计0的个数，记为 n 。当读到第一个有效位时，再继续往后读 n 位，即可完整读出一个整数的elias gamma编码。这正是 “在每个数的有效位前放置[有效位个数-1]个0” 的原因。<br>通过统计0的个数，解码器就能知道遇到第一个有效位后，还剩几个有效位要读。</p>
+<p>看例子，编码后17和11的二进制码关于有效位对称，17和11的第一个有效位左右均是 n位：<br>(0 0001 0001， 000 1011)2</p>
+<p>这样我们就能在二进制流中准确地读出一个又一个的elias gamma编码。读出编码后，再通过 或运算把编码的每一位映射到int变量的对应位上，即可还原该整数，完成解码。</p>
+<p>5.百度的描述</p>
+<p>前方介绍了通俗理解的编码过程。百度是这么描述的：</p>
+<p>5.1 对于待编码正整数X&gt;=1 :</p>
+<p>令N=floor(log<del>2</del>X)，故 2^N^&lt;=X&lt;=2^N+1^;<br>输出N个0比特<br>接着输出X的二进制表示<br>5.2 对于待解码正整数X&gt;=1 :</p>
+<p>读取并计数0比特直到第一个1比特出现，假设计数为N;<br>从第一个1比特之后，再读取 N 个比特，并将之还原成十进制正整数，令之为 M<br>最终解码为 2^N^+M<br>6.特别注意</p>
+<p>6.1 从编码原理处可得，整数0不能用这种编码方式。</p>
+<p>那要想对0进行编码怎么办？ 我们可以在编码前进行加1处理，解码后再减1处理。</p>
+<p>编码前，对整数+1，使0,1,2,3…-&gt;1,2,3,4…,再进行编码。<br>解码后，对所得整数-1，使 1,2,3,4…-&gt;0,1,2,3…,即可还原。<br>6.2 这种编码只适用正整数编码，</p>
+<p>那要对有符号整数进行编码怎么办？ 我们可以通过分段函数把有符号整数一一映射成正整数。<br>编码前，</p>
+<p>对整数X&gt;=0,进行映射X=2*X+1,使0,1,2,3…-&gt;1,3,5,7…<br>对整数X&lt;0,进行映射X=-2*X,使-1,-2,-3…-&gt;2,4,6…<br>解码后,判断所得整数的奇偶性，利用函数，即可还原。</p>
+]]></content>
+      <categories>
+        <category>编码</category>
+      </categories>
+  </entry>
+  <entry>
     <title>分组对象化</title>
     <url>/public/%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/2022/02/27/</url>
     <content><![CDATA[<p>传统分组，对象化分组</p>
@@ -418,6 +451,38 @@
 ]]></content>
       <categories>
         <category>puzzle</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>上线项目-拼图下载模块</title>
+    <url>/public/%E6%8B%BC%E5%9B%BE%E4%B8%8B%E8%BD%BD/2022/03/02/</url>
+    <content><![CDATA[<p>上线项目-拼图下载模块</p>
+<span id="more"></span>
+
+<h1 id="拼图下载模块"><a href="#拼图下载模块" class="headerlink" title="拼图下载模块"></a>拼图下载模块</h1><p>目录<br>    一、关键类或对象<br>    二、关键步骤<br>    三、关键方法<br>    四、其他细节<br>    五、资源目录<br>    六、服务器追加新图  </p>
+<h2 id="一、关键类或对象"><a href="#一、关键类或对象" class="headerlink" title="一、关键类或对象:"></a>一、关键类或对象:</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CJigsawMapLayer                         //走廊类,有个tableView成员,用于展示CJigsawFrame</span><br><span class="line">CJigsawFrame                            //画框类,位于tableView的cell上</span><br><span class="line">CDataCenter::g_data                     //拼图数据对象,全局,存储拼图的部分数据(如拼图解锁数等)</span><br><span class="line">vector&lt;jigsawLevelCfg&gt; g_levelsCfgArr;  //拼图配置容器,全局,汇总走廊内置拼图+云拼图的配置</span><br></pre></td></tr></table></figure>
+<h2 id="二、关键步骤"><a href="#二、关键步骤" class="headerlink" title="二、关键步骤:"></a>二、关键步骤:</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.启动游戏时,读取拼图配置</span><br><span class="line">    执行:AppDelegate()/startGame()/initStyle()/::dealLevelsCfgByGroup() //从文件读配置,生成配置列表,放入容器</span><br><span class="line">    域:blockStyle.cpp</span><br><span class="line">    实现:</span><br><span class="line">        先读取内置本地配置文件,写入g_levelsCfgArr</span><br><span class="line">        再</span><br><span class="line">            若writablePath下有云配置文件,读取追加到g_levelsCfgArr</span><br><span class="line">            否则读取内置云配置文件,读取追加到g_levelsCfgArr</span><br><span class="line"></span><br><span class="line">2.启动游戏时,检查下载老用户丢失的资源:</span><br><span class="line">    执行:AppDelegate()/startGame()/initStyle()/::dealLevelsCfgByGroup()/</span><br><span class="line">    域:blockStyle.cpp</span><br><span class="line">    实现:</span><br><span class="line">        ::dealLevelsCfgByGroup()</span><br><span class="line">        &#123;</span><br><span class="line">            ...</span><br><span class="line">            //检查下载本地拼图至已解锁拼图之间的所有拼图,索引区间[localIndex+1,openedJigsawCount-1]</span><br><span class="line">            int local = g_data-&gt;getLocalJigsawCnt() ;</span><br><span class="line">            int open = g_data-&gt;getOpenedJigsawCnt() ;</span><br><span class="line">            for(int idx=local; idx&lt;open ; ++idx)</span><br><span class="line">            &#123;</span><br><span class="line">                g_data-&gt;checkDownloadJigsawsByIdxInOrder(idx, true,1) ; ///优先级为1</span><br><span class="line">            &#125;</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">3.每次解锁拼图时,向后下载10幅+检查更新云配置:</span><br><span class="line">    执行:不固定</span><br><span class="line">    域:blockStyle.cpp::CDataCenter::setOpenedJigsawCnt</span><br><span class="line">    实现:</span><br><span class="line">        g_data-&gt;CDataCenter::setOpenedJigsawCnt(int cnt,bool donate)</span><br><span class="line">        &#123;</span><br><span class="line">            ...</span><br><span class="line">            if(!donate) //donateJigsaw 时,g_levelsCfgArr还未初始化</span><br><span class="line">            &#123;</span><br><span class="line">                checkJigsawUpdate();                //老版本用户:检查更新list-online.json</span><br><span class="line">                                                    //新版本用户:检查更新list-online2.json</span><br><span class="line">                checkDownloadJigsawsWhenUnlock();   //检查下载后面10幅拼图,优先级为0</span><br><span class="line">            &#125;</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">4.监听下载拼图</span><br><span class="line">    执行:CJigsawMapLayer::tableCellAtIndex()/CJigsawFrame::create()/CJigsawFrame::init()/CJigsawFrame::registerDownLoadListener()</span><br><span class="line">    域:CJigsawMapLayer.cpp::CJigsawFrame::registerDownLoadListener</span><br><span class="line">    实现:</span><br><span class="line">        下载中,更新进度条,判断是否展示广告,更新广告logo等</span><br><span class="line">        下载完成,标记拼图.hasDownload = true ;刷新UI ;</span><br><span class="line">        下载失败,showWifiLayer();</span><br><span class="line"></span><br><span class="line">5.点击下载拼图</span><br><span class="line">    执行:点击画框/CjigsawFrame::onStartJigsaw()</span><br><span class="line">    域:CJigsawMapLayer.cpp::CJigsawFrame::onStartJigsaw</span><br><span class="line">    实现:</span><br><span class="line">        资源已经存在,那么走假进度动画</span><br><span class="line">            从Action的回调里得知动画进度</span><br><span class="line">        资源不存在时,下载:</span><br><span class="line">            g_data-&gt;CDataCenter::checkDownloadJigsawsByIdx(idx, true) ;</span><br><span class="line">            下载的进度通过事件,分发给CJigsawFrame对象,更新到UI</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、关键方法"><a href="#三、关键方法" class="headerlink" title="三、关键方法:"></a>三、关键方法:</h2><ul>
+<li>::dealLevelsCfgByGroup();</li>
+<li>CJigsawFrame::registerDownLoadListener();</li>
+<li>CjigsawFrame::onStartJigsaw();</li>
+<li>CDataCenter::setOpenedJigsawCnt();</li>
+<li>CDataCenter::checkDownloadJigsawsByIdx();<br>  立即下载拼图,用于用户点击的场景,可以多任务并行下<br>  下载进度通过事件分发给对象</li>
+<li>CDataCenter::checkDownloadJigsawsByIdxInOrder()<br>  下载任务添加到容器中,容器管理下载任务<br>  优先级越大越优先下载<br>  某任务三次没响应,丢到末尾,切到下一个<br>  一次轮询的睡眠时间是5秒<br>  下载进度通过事件分发给对象  </li>
+</ul>
+<h2 id="四、细节补充"><a href="#四、细节补充" class="headerlink" title="四、细节补充:"></a>四、细节补充:</h2><ul>
+<li>CocosUI线程睡眠时,在BulldogNet的回调里,直接执行关于GL的操作,UI会出现问题;<br>例:熄屏状态下,拼图下载完,读纹理创建模糊图精灵放到画框,创建出来纹理是黑的 ;<br>状态:已解决;<br>方案:利用Scheduler把回调放到UI线程  </li>
+<li>资源下载优先级:<br>用户点击下载拼图&gt;自动下载拼图&gt;下载音乐  </li>
+<li>老用户更新后,资源丢失所采取的措施:<br>自动检查并下载索引区间[localJigsawCount,openedJigsawCount)  </li>
+<li>拼图下载流程<br>自动下载时-&gt;接收事件,跑真进度-&gt;不是手动,不弹广告-&gt;下载完,更新画框-&gt;用户点击-&gt;用Action跑假进度-&gt;播广告-&gt;广告logo消失<br>手动下载时-&gt;接收事件,跑真进度-&gt;弹广告-&gt;logo消失-&gt;下载完,更新画框  </li>
+<li>云配置文件更新<br>老服务器/BlockJigsawPuzzle/config/list.json          会同步内容到 老版本用户的list-online.json<br>新服务器/BlockJigsawPuzzle/JigsawConfig2/list.json   会同步内容到 新版本用户的list-online2.json  </li>
+</ul>
+<h2 id="五、资源目录"><a href="#五、资源目录" class="headerlink" title="五、资源目录"></a>五、资源目录</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">服务器目录  </span><br><span class="line">  老:http://d265krnl4xx9mj.cloudfront.net/BlockJigsawPuzzle/</span><br><span class="line">      CheckJigsawList.php 后端文件</span><br><span class="line">      config/</span><br><span class="line">          version.josn  版本文件</span><br><span class="line">          list.json     拼图配置</span><br><span class="line">  新:http://resgame.appcpi.net/BlockJigsawPuzzle/</span><br><span class="line">      JigsawConfig2/</span><br><span class="line">          CheckJigsawList2.php</span><br><span class="line">          version2.json  </span><br><span class="line">          list2.json</span><br><span class="line"></span><br><span class="line">包目录</span><br><span class="line">  wood21010Jigsaw_2/_1010Jigsaw/</span><br><span class="line">      _customJigsaws-pieces48-wptop50/</span><br><span class="line">          原50幅</span><br><span class="line">          list-wp.json</span><br><span class="line">          list-online.json</span><br><span class="line">      _customJigsaws-pieces48-wptop25/</span><br><span class="line">          新25幅</span><br><span class="line">          list-wp_new.json</span><br><span class="line">          list-wp2.json</span><br><span class="line">          list-online2.json</span><br><span class="line">用户目录</span><br><span class="line">  writablePath/</span><br><span class="line">      list-online.json</span><br><span class="line">      list-online2.json</span><br><span class="line">      ... 一堆各拼图文件夹</span><br></pre></td></tr></table></figure>
+<h2 id="六、服务器追加新拼图"><a href="#六、服务器追加新拼图" class="headerlink" title="六、服务器追加新拼图"></a>六、服务器追加新拼图</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用脚本生成文件,更新到服务器</span><br><span class="line">先本地测试:</span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/config/list.json                 </span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/config/version.json              </span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/JigsawConfig2/list.json          </span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/JigsawConfig2/version.json</span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/增拼图压缩包       </span><br><span class="line">上线:</span><br><span class="line">联系人:杜家兑</span><br><span class="line">  http://d265krnl4xx9mj.cloudfront.net/BlockJigsawPuzzle/config/list.json      检查版本号、拼图数、url</span><br><span class="line">  http://d265krnl4xx9mj.cloudfront.net/BlockJigsawPuzzle/config/version.json   检查版本号</span><br><span class="line">  http://d265krnl4xx9mj.cloudfront.net/BlockJigsawPuzzle/                      增加拼图zip</span><br><span class="line">  http://resgame.appcpi.net/BlockJigsawPuzzle/JigsawConfig2/list.json          检查版本号、拼图数、url</span><br><span class="line">  http://resgame.appcpi.net/BlockJigsawPuzzle/JigsawConfig2/version.json       检查版本号</span><br><span class="line">  http://resgame.appcpi.net/BlockJigsawPuzzle/                                 增加拼图zip</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>线上项目</category>
       </categories>
   </entry>
   <entry>
@@ -500,8 +565,9 @@
   <entry>
     <title>配置SSL证书</title>
     <url>/public/%E9%85%8D%E7%BD%AESSL%E8%AF%81%E4%B9%A6/2021/11/08/</url>
-    <content><![CDATA[<p>nginx配置ssl</p>
+    <content><![CDATA[<p>nginx配置ssl证书</p>
 <span id="more"></span>
+
 <h1 id="一、SSL证书"><a href="#一、SSL证书" class="headerlink" title="一、SSL证书"></a>一、SSL证书</h1><ul>
 <li>vim打开nginx.conf</li>
 <li>找到TLS,配置如下属性  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssl_certificate &quot;/xxx/xxx/xxx.crt&quot;;  </span><br><span class="line">ssl_certificate_key &quot;/xxx/xxx/xxx.key&quot;;  </span><br><span class="line">location / &#123;    </span><br><span class="line">  proxy_pass http://localhost:4000;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
@@ -510,9 +576,28 @@
 ]]></content>
       <categories>
         <category>ssl</category>
+        <category>nginx</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>firewall防火墙的简单使用</title>
+    <url>/public/%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/2021/10/12/</url>
+    <content><![CDATA[<p>启动、刷新、服务管理、端口管理、查看状态</p>
+<span id="more"></span>
+
+
+<p>一、基础用法<br>    启动<br>    <code>systemctl start/stop/restart firewalld</code><br>    查看<br>    <code>firewall-cmd --list-all</code><br>    加服务<br>    <code>firewall-cmd --permanent --add-service=http</code><br>    移除服务<br>    <code>firewall-cmd --permanent --remove-service=http</code><br>    加端口<br>    <code>firewall-cmd --permanent --add-port=8080/tcp</code><br>    移除端口<br>    <code>firewall-cmd --permanent --add-port=8080/tcp</code><br>    重载<br>    <code>firewall-cmd --reload 但凡改动过一处,都要刷新</code>    </p>
+<p>@see ftp<br>若启动了防火墙,客户机要ftp被动连接服务器告知的端口,那么服务器不仅要开放21端口，还要开放1025–5000的所有端口;此时用ftp主动链接即可</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+        <category>防火墙</category>
       </categories>
       <tags>
-        <tag>ssl</tag>
+        <tag>linux</tag>
+        <tag>计算机</tag>
+        <tag>ftp</tag>
+        <tag>防火墙</tag>
       </tags>
   </entry>
 </search>
