@@ -1,6 +1,662 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JetBrains免费破解</title>
+    <url>/public/10_JetBrains_%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3/2021/11/08/</url>
+    <content><![CDATA[<p>用插件重置jetbrains</p>
+<span id="more"></span>
+<h1 id="一、插件重置jetbrains"><a href="#一、插件重置jetbrains" class="headerlink" title="一、插件重置jetbrains"></a>一、插件重置jetbrains</h1><ul>
+<li>找到窗口<br><code>WebStorm/Preferences-&gt; Plugins-&gt;设置-&gt;Manage Plugin Repositories</code></li>
+<li>添加第三方插件仓库地址：<br><code>https://plugins.zhile.io</code></li>
+<li>在窗口WebStorm/Preferences-&gt;Plugins/Marketplace搜索并安装<br><code>IDE Eval Reset </code></li>
+<li>执行<br><code>Help-&gt;Eval Rest</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>jetbrains</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>jetbrains</tag>
+        <tag>破解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机常见概念</title>
+    <url>/public/11_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/2021/11/08/</url>
+    <content><![CDATA[<p>函数、闭包、范式</p>
+<span id="more"></span>
+<h1 id="一、GC"><a href="#一、GC" class="headerlink" title="一、GC"></a>一、GC</h1><p>Garbage Collection垃圾回收机制</p>
+<h1 id="二、编程范式的发展"><a href="#二、编程范式的发展" class="headerlink" title="二、编程范式的发展"></a>二、编程范式的发展</h1><p>非结构化 60年代(195x) goto语句泛滥<br>结构化、函数式编程     70年代<br>面向对象    90年代<br>多范式融合 (21世纪20年代)    </p>
+<h1 id="三、语言的主流范式"><a href="#三、语言的主流范式" class="headerlink" title="三、语言的主流范式"></a>三、语言的主流范式</h1><p>C 结构化<br>Java 面向对象</p>
+<h1 id="四、概念"><a href="#四、概念" class="headerlink" title="四、概念"></a>四、概念</h1><ul>
+<li>编程范式<br>如何编写程序的方法论</li>
+<li>结构化编程<br>把运算过程尽量写成一系列嵌套的函数调用<br>也称过程式编程,面向过程编程</li>
+<li>函数<br>函数式编程中的函数不是结构化编程中的函数，而是数学中的函数，结构化编程中    的函数是一个过程（Procedure） </li>
+<li>普通程序<br>程序 = 数据结构 + 算法</li>
+<li>函数式编程程序<br>程序 = 数据 + 函数</li>
+<li>高阶函数<br>高阶函数，是指一种比较特殊的函数，它们可以接收函数作为输入，或者返回一个    函数作为输出</li>
+<li>闭包<br>由函数及其相关的引用环境组合而成的实体，即闭包 = 函数 + 引用环境<br>闭包是一种保护私有变量的机制，在函数执行时形成私有的作用域，保护里面的私    有变量不受外界干扰。</li>
+<li>DDD<br>领域驱动设计, Domain-Driven Design</li>
+<li>函数式编程<br>即只关注做什么而不是怎么做<br>函数式编程不仅仅局限于声明式编程。<br>函数式编程最重要的特点是“函数第一位”，即函数可以出现在任何地方，比如可以把函数作为参数传递给另一个函数，不仅如此你还可以将函数作为返回值</li>
+<li>声明式编程<br>如SQL编程<br>告诉计算机应该做什么，但不指定具体要怎么做<br>不需要创建变量用来存储数据<br>它不包含循环控制的代码如 for， while  <h1 id="五、面向对象建模四步"><a href="#五、面向对象建模四步" class="headerlink" title="五、面向对象建模四步"></a>五、面向对象建模四步</h1>需求分析建模<br>面向对象分析（OOA）<br>面向对象设计（OOD）<br>面向对象编码（OOP）<h1 id="六、命令式编程"><a href="#六、命令式编程" class="headerlink" title="六、命令式编程"></a>六、命令式编程</h1>又称指令式编程<br>与声明式对立<h1 id="七、声明式编程-子范式"><a href="#七、声明式编程-子范式" class="headerlink" title="七、声明式编程-子范式"></a>七、声明式编程-子范式</h1></li>
+<li>约束式     </li>
+<li>函数式     </li>
+<li>逻辑式<br>如Prolog声明关系并且对关系进行提问</li>
+<li>领域专属语言<ul>
+<li>声明式领域专属语言（DSLs）包括</li>
+<li>语法分析器yacc，</li>
+<li>编译说明语言Make，</li>
+<li>管理配置语言Puppet，</li>
+<li>正则表达式和SQL的一些子集（例如Select queries等）</li>
+<li>很多文本标记语言,如HTML、MXML、XAML和XSLT也是声明式的</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>函数</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分组对象化</title>
+    <url>/public/12_%E6%8B%BC%E5%9B%BE10103D_%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/2022/02/27/</url>
+    <content><![CDATA[<p>拼图10103D的对象化分组，与传统分组的比较</p>
+<span id="more"></span>
+
+<h3 id="1-分组为什么要对象化"><a href="#1-分组为什么要对象化" class="headerlink" title="1.分组为什么要对象化"></a>1.分组为什么要对象化</h3><pre><code>传统的分组方法
+    用户被分配了一个分组ID
+    在程序中的各个层次和环节，通过if else判断分组ID，给用户应用不同的逻辑
+传统的弊端
+    if else过多
+    逻辑复杂、混乱
+    代码改动风险大
+    代码块不美观
+    不利于检索
+    没有和外部逻辑解耦
+对象化的分组
+    每个分组对象内置一个ID，都有自己的身份，对象通过对比内置ID与外部ID，自己决定是否激活逻辑
+    设计：
+</code></pre>
+<h3 id="2-分组对象设计（C-）"><a href="#2-分组对象设计（C-）" class="headerlink" title="2.分组对象设计（C++）"></a>2.分组对象设计（C++）</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GroupX</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> innerID = X ;</span><br><span class="line">    <span class="keyword">bool</span> enable = <span class="literal">false</span> ;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setEnable</span><span class="params">(<span class="keyword">int</span> ID)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        enable = ID == innerID ;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doSomething</span><span class="params">(lambda)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(enable)</span><br><span class="line">            lambda</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doSomething2</span><span class="params">(lambda)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(enable)</span><br><span class="line">            lambda</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-用宏简化"><a href="#3-用宏简化" class="headerlink" title="3.用宏简化"></a>3.用宏简化</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//用宏简化</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> GROUP(XXX,YYY) \</span></span><br><span class="line"><span class="meta">class GroupXXX \</span></span><br><span class="line"><span class="meta">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> innerID = XXX ; \</span><br><span class="line">    <span class="keyword">bool</span> enable = <span class="literal">false</span> ; \</span><br><span class="line"> <span class="keyword">public</span>: \</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setEnable</span><span class="params">(<span class="keyword">int</span> ID)</span> \</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        enable = ID == innerID ; \ </span><br><span class="line">    &#125;</span><br><span class="line">    YYY \</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">///实际使用</span></span><br><span class="line"><span class="built_in">GROUP</span>(<span class="number">1</span>,);</span><br><span class="line"><span class="built_in">GROUP</span>(<span class="number">2</span>,</span><br><span class="line">    <span class="keyword">void</span> <span class="built_in">doSomething</span>();</span><br><span class="line">    );</span><br><span class="line"><span class="built_in">GROUP</span>(<span class="number">3</span>,</span><br><span class="line">    <span class="keyword">void</span> <span class="built_in">doSomething</span>();</span><br><span class="line">    );</span><br></pre></td></tr></table></figure>
+<h3 id="4-举例"><a href="#4-举例" class="headerlink" title="4.举例"></a>4.举例</h3><pre><code>    例：
+        设  ID = 2
+        通过执行：
+            group1.setEnable(ID) ;
+            group2.setEnable(ID) ;
+            group3.setEnable(ID) ;
+        那么最终只有group2被激活，group1、3因为ID不匹配未激活 ；
+        最终，以下代码，只有group2的逻辑被执行，1、3的逻辑不会执行
+            group1.doSomething(lambda)
+            group2.doSomething(lambda)
+            group3.doSomething(lambda)
+    要想看在工程中索引某个分组，那么直接搜索group2即可
+</code></pre>
+]]></content>
+      <categories>
+        <category>puzzle</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>拼图10103D-拼图下载模块</title>
+    <url>/public/13_%E6%8B%BC%E5%9B%BE10103D_%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9D%97/2022/03/02/</url>
+    <content><![CDATA[<p>拼图10103D-拼图下载模块</p>
+<span id="more"></span>
+
+<h1 id="拼图下载模块"><a href="#拼图下载模块" class="headerlink" title="拼图下载模块"></a>拼图下载模块</h1><p>目录<br>    一、关键类或对象<br>    二、关键步骤<br>    三、关键方法<br>    四、其他细节<br>    五、资源目录<br>    六、服务器追加新图  </p>
+<h2 id="一、关键类或对象"><a href="#一、关键类或对象" class="headerlink" title="一、关键类或对象:"></a>一、关键类或对象:</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CJigsawMapLayer                         //走廊类,有个tableView成员,用于展示CJigsawFrame</span><br><span class="line">CJigsawFrame                            //画框类,位于tableView的cell上</span><br><span class="line">CDataCenter::g_data                     //拼图数据对象,全局,存储拼图的部分数据(如拼图解锁数等)</span><br><span class="line">vector&lt;jigsawLevelCfg&gt; g_levelsCfgArr;  //拼图配置容器,全局,汇总走廊内置拼图+云拼图的配置</span><br></pre></td></tr></table></figure>
+<h2 id="二、关键步骤"><a href="#二、关键步骤" class="headerlink" title="二、关键步骤:"></a>二、关键步骤:</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.启动游戏时,读取拼图配置</span><br><span class="line">    执行:AppDelegate()/startGame()/initStyle()/::dealLevelsCfgByGroup() //从文件读配置,生成配置列表,放入容器</span><br><span class="line">    域:blockStyle.cpp</span><br><span class="line">    实现:</span><br><span class="line">        先读取内置本地配置文件,写入g_levelsCfgArr</span><br><span class="line">        再</span><br><span class="line">            若writablePath下有云配置文件,读取追加到g_levelsCfgArr</span><br><span class="line">            否则读取内置云配置文件,读取追加到g_levelsCfgArr</span><br><span class="line"></span><br><span class="line">2.启动游戏时,检查下载老用户丢失的资源:</span><br><span class="line">    执行:AppDelegate()/startGame()/initStyle()/::dealLevelsCfgByGroup()/</span><br><span class="line">    域:blockStyle.cpp</span><br><span class="line">    实现:</span><br><span class="line">        ::dealLevelsCfgByGroup()</span><br><span class="line">        &#123;</span><br><span class="line">            ...</span><br><span class="line">            //检查下载本地拼图至已解锁拼图之间的所有拼图,索引区间[localIndex+1,openedJigsawCount-1]</span><br><span class="line">            int local = g_data-&gt;getLocalJigsawCnt() ;</span><br><span class="line">            int open = g_data-&gt;getOpenedJigsawCnt() ;</span><br><span class="line">            for(int idx=local; idx&lt;open ; ++idx)</span><br><span class="line">            &#123;</span><br><span class="line">                g_data-&gt;checkDownloadJigsawsByIdxInOrder(idx, true,1) ; ///优先级为1</span><br><span class="line">            &#125;</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">3.每次解锁拼图时,向后下载10幅+检查更新云配置:</span><br><span class="line">    执行:不固定</span><br><span class="line">    域:blockStyle.cpp::CDataCenter::setOpenedJigsawCnt</span><br><span class="line">    实现:</span><br><span class="line">        g_data-&gt;CDataCenter::setOpenedJigsawCnt(int cnt,bool donate)</span><br><span class="line">        &#123;</span><br><span class="line">            ...</span><br><span class="line">            if(!donate) //donateJigsaw 时,g_levelsCfgArr还未初始化</span><br><span class="line">            &#123;</span><br><span class="line">                checkJigsawUpdate();                //老版本用户:检查更新list-online.json</span><br><span class="line">                                                    //新版本用户:检查更新list-online2.json</span><br><span class="line">                checkDownloadJigsawsWhenUnlock();   //检查下载后面10幅拼图,优先级为0</span><br><span class="line">            &#125;</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">4.监听下载拼图</span><br><span class="line">    执行:CJigsawMapLayer::tableCellAtIndex()/CJigsawFrame::create()/CJigsawFrame::init()/CJigsawFrame::registerDownLoadListener()</span><br><span class="line">    域:CJigsawMapLayer.cpp::CJigsawFrame::registerDownLoadListener</span><br><span class="line">    实现:</span><br><span class="line">        下载中,更新进度条,判断是否展示广告,更新广告logo等</span><br><span class="line">        下载完成,标记拼图.hasDownload = true ;刷新UI ;</span><br><span class="line">        下载失败,showWifiLayer();</span><br><span class="line"></span><br><span class="line">5.点击下载拼图</span><br><span class="line">    执行:点击画框/CjigsawFrame::onStartJigsaw()</span><br><span class="line">    域:CJigsawMapLayer.cpp::CJigsawFrame::onStartJigsaw</span><br><span class="line">    实现:</span><br><span class="line">        资源已经存在,那么走假进度动画</span><br><span class="line">            从Action的回调里得知动画进度</span><br><span class="line">        资源不存在时,下载:</span><br><span class="line">            g_data-&gt;CDataCenter::checkDownloadJigsawsByIdx(idx, true) ;</span><br><span class="line">            下载的进度通过事件,分发给CJigsawFrame对象,更新到UI</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、关键方法"><a href="#三、关键方法" class="headerlink" title="三、关键方法:"></a>三、关键方法:</h2><ul>
+<li>::dealLevelsCfgByGroup();</li>
+<li>CJigsawFrame::registerDownLoadListener();</li>
+<li>CjigsawFrame::onStartJigsaw();</li>
+<li>CDataCenter::setOpenedJigsawCnt();</li>
+<li>CDataCenter::checkDownloadJigsawsByIdx();<br>  立即下载拼图,用于用户点击的场景,可以多任务并行下<br>  下载进度通过事件分发给对象</li>
+<li>CDataCenter::checkDownloadJigsawsByIdxInOrder()<br>  下载任务添加到容器中,容器管理下载任务<br>  优先级越大越优先下载<br>  某任务三次没响应,丢到末尾,切到下一个<br>  一次轮询的睡眠时间是5秒<br>  下载进度通过事件分发给对象  </li>
+</ul>
+<h2 id="四、细节补充"><a href="#四、细节补充" class="headerlink" title="四、细节补充:"></a>四、细节补充:</h2><ul>
+<li>CocosUI线程睡眠时,在BulldogNet的回调里,直接执行关于GL的操作,UI会出现问题;<br>例:熄屏状态下,拼图下载完,读纹理创建模糊图精灵放到画框,创建出来纹理是黑的 ;<br>状态:已解决;<br>方案:利用Scheduler把回调放到UI线程  </li>
+<li>资源下载优先级:<br>用户点击下载拼图&gt;自动下载拼图&gt;下载音乐  </li>
+<li>老用户更新后,资源丢失所采取的措施:<br>自动检查并下载索引区间[localJigsawCount,openedJigsawCount)  </li>
+<li>拼图下载流程<br>自动下载时-&gt;接收事件,跑真进度-&gt;不是手动,不弹广告-&gt;下载完,更新画框-&gt;用户点击-&gt;用Action跑假进度-&gt;播广告-&gt;广告logo消失<br>手动下载时-&gt;接收事件,跑真进度-&gt;弹广告-&gt;logo消失-&gt;下载完,更新画框  </li>
+<li>云配置文件更新<br>老服务器/BlockJigsawPuzzle/config/list.json          会同步内容到 老版本用户的list-online.json<br>新服务器/BlockJigsawPuzzle/JigsawConfig2/list.json   会同步内容到 新版本用户的list-online2.json  </li>
+</ul>
+<h2 id="五、资源目录"><a href="#五、资源目录" class="headerlink" title="五、资源目录"></a>五、资源目录</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">服务器目录  </span><br><span class="line">  老:http://d265krnl4xx9mj.cloudfront.net/BlockJigsawPuzzle/</span><br><span class="line">      CheckJigsawList.php 后端文件</span><br><span class="line">      config/</span><br><span class="line">          version.josn  版本文件</span><br><span class="line">          list.json     拼图配置</span><br><span class="line">  新:http://resgame.appcpi.net/BlockJigsawPuzzle/</span><br><span class="line">      JigsawConfig2/</span><br><span class="line">          CheckJigsawList2.php</span><br><span class="line">          version2.json  </span><br><span class="line">          list2.json</span><br><span class="line"></span><br><span class="line">包目录</span><br><span class="line">  wood21010Jigsaw_2/_1010Jigsaw/</span><br><span class="line">      _customJigsaws-pieces48-wptop50/</span><br><span class="line">          原50幅</span><br><span class="line">          list-wp.json</span><br><span class="line">          list-online.json</span><br><span class="line">      _customJigsaws-pieces48-wptop25/</span><br><span class="line">          新25幅</span><br><span class="line">          list-wp_new.json</span><br><span class="line">          list-wp2.json</span><br><span class="line">          list-online2.json</span><br><span class="line">用户目录</span><br><span class="line">  writablePath/</span><br><span class="line">      list-online.json</span><br><span class="line">      list-online2.json</span><br><span class="line">      ... 一堆各拼图文件夹</span><br></pre></td></tr></table></figure>
+<h2 id="六、服务器追加新拼图"><a href="#六、服务器追加新拼图" class="headerlink" title="六、服务器追加新拼图"></a>六、服务器追加新拼图</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用脚本生成文件,更新到服务器</span><br><span class="line">先本地测试:</span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/config/list.json                 </span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/config/version.json              </span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/JigsawConfig2/list.json          </span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/JigsawConfig2/version.json</span><br><span class="line">  http://yujizhu.com:8083/BlockJigsawPuzzle/增拼图压缩包       </span><br><span class="line">上线:</span><br><span class="line">联系人:杜家兑</span><br><span class="line">  http://d265krnl4xx9mj.cloudfront.net/BlockJigsawPuzzle/config/list.json      检查版本号、拼图数、url</span><br><span class="line">  http://d265krnl4xx9mj.cloudfront.net/BlockJigsawPuzzle/config/version.json   检查版本号</span><br><span class="line">  http://d265krnl4xx9mj.cloudfront.net/BlockJigsawPuzzle/                      增加拼图zip</span><br><span class="line">  http://resgame.appcpi.net/BlockJigsawPuzzle/JigsawConfig2/list.json          检查版本号、拼图数、url</span><br><span class="line">  http://resgame.appcpi.net/BlockJigsawPuzzle/JigsawConfig2/version.json       检查版本号</span><br><span class="line">  http://resgame.appcpi.net/BlockJigsawPuzzle/                                 增加拼图zip</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>拼图10103D</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Elias gamma code(以利亚加玛码)</title>
+    <url>/public/14_%E7%BC%96%E7%A0%81_%E4%BB%A5%E5%88%A9%E4%BA%9A%E5%8A%A0%E7%8E%9B%E7%A0%81/2022/03/02/</url>
+    <content><![CDATA[<p>二进制编码，Elias gamma code(以利亚加玛码)</p>
+<span id="more"></span>
+<h1 id="Elias-gamma-code-保加利亚码"><a href="#Elias-gamma-code-保加利亚码" class="headerlink" title="Elias gamma code(保加利亚码)"></a>Elias gamma code(保加利亚码)</h1><p>1.简介</p>
+<p>Elias gamma code 是一种用于正整数的通用编码，由Peter Elias发明。常被用于无法事先得知上界的正整数，即一种变长编码方式。<br>CocosBuilder的ccb文件中的整数正是采用了这种编码方式，被编码到了ccbi文件中(ccbi是二进制文件)。<br>在Cocos2dx引擎中，CCBReader利用了Elias gamma code 的解码方式，将ccbi文件中的整数解析出来。</p>
+<p>2.名词解释</p>
+<p>有效位：一个二进制数从左往右第一个为1的位及其之后所有位叫有效位，其余称无效位，如：0 000 1 0001<br>floor：向下取整，即[X,X+1)区间中的所有数都取X;</p>
+<p>3.编码原理</p>
+<p>我们都知道，int变量通常占4个字节(byte)，每个字节8位(bit),共占32位，在计算机中以二进制存储。如果能剔除所有二进制数无效位，再将剩下有效位 紧密排列写进二进制文件里，就可以大大减少空间占用。这就是原理，很简单。</p>
+<p>举个栗子：<br>剔除前:(17,11)10=(0000 0000 000 1 0001 ,0000 0000 0000 1011)2—-&gt;剔除后 (1 0001,1011)2</p>
+<p>我们看到17的有效位个数为 5，无效位个数为27。11的有效位个数是 4，无效位个数是28。<br>然后对17和9剔除无效位，剔除后共占9位，剔除前，两个二进制数占了64位。</p>
+<p>但是又考虑到解码时必须指明被编码了的有效位个数,不然解码器不知道应该读到哪一位为止。还要进行进一步处理，即在二进制数的 有效位 前 放置 [有效位个数-1] 个0，此时编码完成。<br>接着上面的例子，在17前加 4个0，在11前加 3个0。</p>
+<p>(1 0001,1011)2—-&gt;编码结果：(0 000 1 0001， 000 1011 )2</p>
+<p>最终，只用16位对原64位的两个数完成了编码。</p>
+<p>4.解码原理</p>
+<p>为什么加的0要比有效位个数少 1 ？ 跟解码原理有关。<br>解码时，从左往右读二进制串，一次读一位，边读边累计0的个数，记为 n 。当读到第一个有效位时，再继续往后读 n 位，即可完整读出一个整数的elias gamma编码。这正是 “在每个数的有效位前放置[有效位个数-1]个0” 的原因。<br>通过统计0的个数，解码器就能知道遇到第一个有效位后，还剩几个有效位要读。</p>
+<p>看例子，编码后17和11的二进制码关于有效位对称，17和11的第一个有效位左右均是 n位：<br>(0 0001 0001， 000 1011)2</p>
+<p>这样我们就能在二进制流中准确地读出一个又一个的elias gamma编码。读出编码后，再通过 或运算把编码的每一位映射到int变量的对应位上，即可还原该整数，完成解码。</p>
+<p>5.百度的描述</p>
+<p>前方介绍了通俗理解的编码过程。百度是这么描述的：</p>
+<p>5.1 对于待编码正整数X&gt;=1 :</p>
+<p>令N=floor(log<del>2</del>X)，故 2^N^&lt;=X&lt;=2^N+1^;<br>输出N个0比特<br>接着输出X的二进制表示<br>5.2 对于待解码正整数X&gt;=1 :</p>
+<p>读取并计数0比特直到第一个1比特出现，假设计数为N;<br>从第一个1比特之后，再读取 N 个比特，并将之还原成十进制正整数，令之为 M<br>最终解码为 2^N^+M<br>6.特别注意</p>
+<p>6.1 从编码原理处可得，整数0不能用这种编码方式。</p>
+<p>那要想对0进行编码怎么办？ 我们可以在编码前进行加1处理，解码后再减1处理。</p>
+<p>编码前，对整数+1，使0,1,2,3…-&gt;1,2,3,4…,再进行编码。<br>解码后，对所得整数-1，使 1,2,3,4…-&gt;0,1,2,3…,即可还原。<br>6.2 这种编码只适用正整数编码，</p>
+<p>那要对有符号整数进行编码怎么办？ 我们可以通过分段函数把有符号整数一一映射成正整数。<br>编码前，</p>
+<p>对整数X&gt;=0,进行映射X=2*X+1,使0,1,2,3…-&gt;1,3,5,7…<br>对整数X&lt;0,进行映射X=-2*X,使-1,-2,-3…-&gt;2,4,6…<br>解码后,判断所得整数的奇偶性，利用函数，即可还原。</p>
+]]></content>
+      <categories>
+        <category>编码</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>拼图10103D-弹窗模块</title>
+    <url>/public/15_%E6%8B%BC%E5%9B%BE10103D_%E5%BC%B9%E7%AA%97%E6%A8%A1%E5%9D%97/2022/03/21/</url>
+    <content><![CDATA[<p>拼图10103D-弹框模块</p>
+<span id="more"></span>
+<hr>
+<h1 id="一、需求分析"><a href="#一、需求分析" class="headerlink" title="一、需求分析"></a>一、需求分析</h1><pre><code>拼图走廊会展示各种弹框。
+各弹框之间没有管道进行交流,导致弹框的优先级、弹出时机、释放时刻这些信息都是离散的,
+各模块间没法通知和协调 ;
+现有弹框包括:
+  - 每日任务列表框、每日任务待玩提示框
+  - 广告任务列表、广告任务提示弹框、
+  - 故事书活动弹框、故事书书架弹框、故事书书页弹框
+  弹框又分为点击弹/自动弹,2*7=14个弹框,每个行为、优先级、发送的事件都不一样；
+  在没有弹框管理器的情况下，逻辑特别复杂
+</code></pre>
+<h1 id="二、开发需求"><a href="#二、开发需求" class="headerlink" title="二、开发需求"></a>二、开发需求</h1><pre><code>场景：
+    1.父节点创建时，窗口被addChild到父节点上
+    2.当几个窗口冲突时，根据优先级选择一个弹；
+    3.弹出的窗口被关闭时，自动弹出下一窗口,直到被弹完
+    4.以前注册的窗口不想弹了，可以clear
+    5.父节点释放时，窗口释放
+
+抽象该模块的功能：
+    - 可以创建窗口
+    - 可以定义窗口的弹出队列
+    - 可以指定冲突窗口的优先级
+    - 创建和释放依赖于父节点
+    - 开发者只要创建窗口，指定冲突窗口优先级、定义弹出队列，无需告知模块窗口何时关闭
+  那么模块就应该能:
+    当窗口冲突时，根据优先级选择一个弹；
+    自动监测窗口的关闭，调用下一个窗口的创建；
+</code></pre>
+<h1 id="三、实现"><a href="#三、实现" class="headerlink" title="三、实现"></a>三、实现</h1><pre><code>类Popper:Node  
+___
++create(root):Popper*
++addWindow(groupID,priority,name,function&lt;void()&gt; onPop):void
++waitPop():void
++tryPop():void
++clear():void
+#init(root):bool
+#next():void
+#pop():void
+___
+</code></pre>
+<h1 id="三、示例"><a href="#三、示例" class="headerlink" title="三、示例"></a>三、示例</h1><pre><code>_popper-&gt;clear()    ///清空已注册但还未弹窗口
+_popper-&gt;addWindow(1,1, []()-&gt;Ref*&#123;return window;&#125;)     ///注册1组,优先级1的弹框
+_popper-&gt;addWindow(1,2, []()-&gt;Ref*&#123;return window;&#125;)    ///注册1组,优先级2的弹框
+_popper-&gt;addWindow(2,1, []()-&gt;Ref*&#123;return window;&#125;)    ///注册2组,优先级1的弹框
+_popper-&gt;addWindow(2,2, []()-&gt;Ref*&#123;return window;&#125;)    ///注册2组,优先级2的弹框
+_popper-&gt;addWindow(2,3, []()-&gt;Ref*&#123;return window;&#125;)    ///注册2组,优先级3的弹框
+_popper-&gt;pop()      ///开始弹
+....
+_popper-&gt;clear()    ///清空已注册但还未弹窗口
+_popper-&gt;addWindow(1,1, []()-&gt;Ref*&#123;return window;&#125;)      ///注册1组,优先级1的弹框
+_popper-&gt;pop()      ///开始弹
+</code></pre>
+<p>…</p>
+]]></content>
+      <categories>
+        <category>拼图10103D</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>缩写大全</title>
+    <url>/public/16_%E7%BC%A9%E5%86%99%E5%A4%A7%E5%85%A8/2022/03/21/</url>
+    <content><![CDATA[<p>缩写大全</p>
+<span id="more"></span>
+
+<h1 id="U"><a href="#U" class="headerlink" title="U"></a>U</h1><ul>
+<li>UML  统一建模语言  Unified Modeling Language</li>
+</ul>
+]]></content>
+      <categories>
+        <category>缩写</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>解决Transmit的乱码问题</title>
+    <url>/public/1_Transmit_%E8%A7%A3%E5%86%B3%E6%98%BE%E7%A4%BA%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/</url>
+    <content><![CDATA[<p>Transmit文件名乱码</p>
+<span id="more"></span>
+
+
+<h1 id="一、文件名显示乱码"><a href="#一、文件名显示乱码" class="headerlink" title="一、文件名显示乱码"></a>一、文件名显示乱码</h1><p>菜单项里找到UTF-8并设置</p>
+<blockquote>
+<p>显示&gt;文本编码&gt;UTF-8</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>软件</category>
+        <category>ftp</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>ftp</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>firewall防火墙的简单使用</title>
+    <url>/public/2_Linux_%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E4%BD%BF%E7%94%A8/2021/10/12/</url>
+    <content><![CDATA[<p>启动、刷新、服务管理、端口管理、查看状态</p>
+<span id="more"></span>
+
+
+<p>一、基础用法<br>    启动<br>    <code>systemctl start/stop/restart firewalld</code><br>    查看<br>    <code>firewall-cmd --list-all</code><br>    加服务<br>    <code>firewall-cmd --permanent --add-service=http</code><br>    移除服务<br>    <code>firewall-cmd --permanent --remove-service=http</code><br>    加端口<br>    <code>firewall-cmd --permanent --add-port=8080/tcp</code><br>    移除端口<br>    <code>firewall-cmd --permanent --add-port=8080/tcp</code><br>    重载<br>    <code>firewall-cmd --reload 但凡改动过一处,都要刷新</code>    </p>
+<p>@see ftp<br>若启动了防火墙,客户机要ftp被动连接服务器告知的端口,那么服务器不仅要开放21端口，还要开放1025–5000的所有端口;此时用ftp主动链接即可</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+        <category>防火墙</category>
+      </categories>
+      <tags>
+        <tag>ftp</tag>
+        <tag>linux</tag>
+        <tag>计算机</tag>
+        <tag>防火墙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ftp无法上传,无法下载,无法链接</title>
+    <url>/public/3_Ftp_%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E3%80%81%E7%99%BB%E5%BD%95/2021/10/12/</url>
+    <content><![CDATA[<p>主动与被动连接、文件无法下载/上传、无法登录、mac无命令等</p>
+<span id="more"></span>
+
+
+<h3 id="一、文件无法上传"><a href="#一、文件无法上传" class="headerlink" title="一、文件无法上传"></a>一、文件无法上传</h3><ul>
+<li>辨别服务器端ftp主动与被动模式<br>检查/etc/vsftpd/vsftpd.conf<br><code>connect_from_port_20=YES #主动模式</code></li>
+<li>主动模式下，确保防火墙打开了端口20<br><code>firewall-cmd --permanent --add-port=20/tcp</code><br><code>firewall-cmd --reload #激活修改的配置</code><br>也可以选择关闭防火墙<br><code>systemctl stop firewalld</code></li>
+<li>转移目录所有权,将目标目录所有权给root用户<br><code>#假设向/home目录传输文件</code><br><code>ll /home</code><br><code>chown -R root /home</code></li>
+<li>确保/etc/vsftpd/vsftpd.conf配置中<br><code>write_enable=YES</code></li>
+</ul>
+<h3 id="二、无法登录"><a href="#二、无法登录" class="headerlink" title="二、无法登录"></a>二、无法登录</h3><ul>
+<li>更改配置vsftpd.conf<br><code>#/etc/vsftpd/vsftpd.conf</code><br><code>userlist_enable=NO</code></li>
+<li>检查ftpusers,删除要登录的用户名</li>
+<li>检查user_list,添加要登录的用户名</li>
+<li>重启<br><code>systemctl restart vsftpd</code></li>
+</ul>
+<h3 id="三、Mac终端找不到ftp命令"><a href="#三、Mac终端找不到ftp命令" class="headerlink" title="三、Mac终端找不到ftp命令"></a>三、Mac终端找不到ftp命令</h3><ul>
+<li>安装ftp等工具<br><code>brew install inetutils</code></li>
+</ul>
+<h3 id="四、一些概念"><a href="#四、一些概念" class="headerlink" title="四、一些概念"></a>四、一些概念</h3><ul>
+<li>主动FTP:<br>命令连接：客户端 大于1024端口 &gt;&gt; 服务器 21端口<br>数据连接：服务器 客户端（大于1024的端口）&lt;&lt; 20端口</li>
+<li>被动FTP：<br>命令连接：客户端大于1024端口 &gt;&gt; 服务器 21端口<br>数据连接：客户端大于1024端口 &gt;&gt; 服务器大于1024端口</li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+        <category>ftp</category>
+      </categories>
+      <tags>
+        <tag>ftp</tag>
+        <tag>linux</tag>
+        <tag>计算机</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux一些命令缩写的含义</title>
+    <url>/public/4_Linux_%E5%B8%B8%E8%A7%81%E7%BC%A9%E5%86%99/2021/10/12/</url>
+    <content><![CDATA[<p>linux、ssh、ftp、rpm、vsftpd、firewalld、httpd等</p>
+<span id="more"></span>
+
+
+<h1 id="一、缩写全称"><a href="#一、缩写全称" class="headerlink" title="一、缩写全称"></a>一、缩写全称</h1><ul>
+<li>linux <code>linux is not unix</code>  </li>
+<li>selinux<code>指secure linux</code></li>
+<li>ngin    <code>Engine X</code>  </li>
+<li>ftp     <code>文件传输协议 File Transfer Protocol</code></li>
+<li>vsftpd <code>very secure FTP daemon</code></li>
+<li>ssh      <code>安全外壳Secure Shell</code></li>
+<li>rpm      <code>红帽软件包管理器,Red-Hat Package Manager</code></li>
+<li>yum    <code>Yellow dog Updater, Modified,RPM软件包管理器</code></li>
+</ul>
+<h1 id="二、’d’的含义"><a href="#二、’d’的含义" class="headerlink" title="二、’d’的含义"></a>二、’d’的含义</h1><ul>
+<li>执行程序xxxd <code>d指daemon</code><br>指能后台运行的进程<br>如systemd、vsftpd、firewalld等</li>
+<li>文件夹.conf.d  <code>d指directory</code><br>为了兼容以前的conf文件夹,加.d形成了新的配置文件夹</li>
+<li>描述drwxr-xr-x    <code>d指directory</code><br>d指directory，表示被描述的对象是目录，而非文件<br><code>用ll命令试试</code></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>PuzzleSDK</title>
+    <url>/public/5_PuzzleSDK/2021/10/12/</url>
+    <content><![CDATA[<p>目录<br>一、PuzzleSDK</p>
+<ul>
+<li>1.关键字  </li>
+<li>2.1按专题       </li>
+<li>2.2 按目录   </li>
+<li>2.3按类型  </li>
+</ul>
+<p>二、SDK维护<br>三、规范<br>四、常用概念的定义</p>
+<span id="more"></span>
+
+
+<h1 id="一、PuzzleSDK"><a href="#一、PuzzleSDK" class="headerlink" title="一、PuzzleSDK"></a>一、PuzzleSDK</h1><h3 id="1-关键字"><a href="#1-关键字" class="headerlink" title="1.关键字"></a>1.关键字</h3><pre><code>- 示例
+    PzTest   所有示例代码均在该方法下
+- 命名空间
+    - 一级 pz 
+    - 二级 node、sprite、button、label、progress、json、http、ccb、json、str、debug、ab、res、ptime、other
+</code></pre>
+<h3 id="2-1按专题-专题中列出的项作为项目实现首选项-其他则弃用"><a href="#2-1按专题-专题中列出的项作为项目实现首选项-其他则弃用" class="headerlink" title="2.1按专题    (专题中列出的项作为项目实现首选项,其他则弃用)"></a>2.1按专题    (专题中列出的项作为项目实现首选项,其他则弃用)</h3><pre><code>- SDK根文件  
+    YTCommon.h
+- 读写本地数据
+    由类GB_UserDefault负责                
+    参考:GB_UserDefault::pzTest()
+    [注:支持格式map、vector、set、整形、浮点、串,支持自动+手动保存]
+- 操作音频
+    由单例PzCoreAudio负责,全局变量g_snd      
+    参考:PzCoreAudio::pzTest()
+    [注:支持ogg、mp3]
+- 接入CCB
+    - 加载loader,解析ccbi   
+        由空间ccb负责                     
+        参考:pz::ccb::pzTest()
+    - 操作UI                             
+        由类QCoreLayer负责
+        参考:QCoreLayer::pzTest()
+        [注:ccbi创建Layer/Scene、模态框、绑定UI、弹出Layer、播放动画]
+- 创建精灵
+    由空间sprite负责
+    参考:pz::sprite::pzTest()
+- 操作配置文件
+    - 解析plist
+        由类CDataPlistReader负责
+        参考:CDataPlistReader::pzTest()
+    - json对象                            [注:读、写、保存]
+        由空间json负责
+        参考示例类:Group10000、PzTestModule
+- 新建分组/模块
+    由类PzModule负责
+    参考:PzModule::pzTest()
+- GT、Firebase事件
+    由全局方法onEvent_XXX()负责
+    参考:YTCommonCCRed.h
+- 点击
+    由空间node下的某些方法控制
+    参考:pz::node::pzTest();
+    [点击判定、交互屏蔽、交互监听]
+- 调试
+    - 绘制节点:
+        方法debugDrawLayer
+    - 事件、节点可视化:
+        由单例g_log负责
+        参考:VisualLog::pzTest()
+- 处理字符串
+    由空间str负责
+    参考:pz::str::pzTest()
+    @see 宏FMT 格式化字符串
+    [支持格式化字符串、普通替换、正则替换、切分、大小写转换]
+- 控件
+    - 翻页控件
+        由类PageView负责
+        见PageView::pzTest()
+    - 表格控件
+        由类ZGTableView负责
+        见ZGTableView::pzTest()
+- 压缩、网络通信
+    由空间http负责
+    参考:pz::http::pzTest
+- 宏 
+    由文件UtilsMacros.h负责
+    - 单例宏        Singleton_Imp
+    - 格式化字符串   FMT 
+- Board
+    - 非关卡棋盘UI层   
+        由类CBoard负责
+        属于棋盘UI层
+    - 关卡版棋盘UI层 
+        由类CBoardNN负责
+        属于棋盘UI层
+    - 棋盘的逻辑层
+        由类CMapAssisant负责
+</code></pre>
+<h3 id="2-2按目录"><a href="#2-2按目录" class="headerlink" title="2.2按目录"></a>2.2按目录</h3><pre><code>- psdk 根目录
+    - RedInterstitial   不重要,bulldog广告UI类目录
+    - ytcommon  [**重要**]
+        - core  核心功能区
+            - GB_UserDefault.h    类,负责数据读写存
+            - PzCoreAudio.h       单例(g_snd),负责操作音频
+            - PzLog.h             单例(_vlog),负责日志/节点可视化
+            - PzModule.h          基类,分组类/模块类的基类
+            - QCoreLayer.h        类,负责操作ccb动画和变量
+            - Utils2dxNode.h      全局方法池,汇集了操作节点及其派生类的辅助方法;
+            - UtilsCppSTL.h       全局方法池,汇集了操作std的辅助方法
+            - UtilsMacro.h        宏池,汇集了psdk的宏定义
+            - 弃用
+                CtrlAudioMgr.h    单例,负责操作音频
+        - red   红海API区
+            - CPlatform.h         平台类,提供同样的接口,但不同平台有不同的实现
+            - YTBaseDefRed.h      类池,里面有游戏配置类、常量类、GameLayer类
+            - YTCommonCCRed.h     全局方法池,汇集了GT事件方法、广告加载和播放方法
+        - extension  拓展区
+            - CVector.hpp         提供了向量的极坐标系实现
+            - PzJson.hpp          pz::json的方法池
+        - YTCommonCC.h            只包含puzzle文件,不包含公司Sdk文件的头文件
+        - YTCommon.h              sdk根文件,可直观查阅所有的空间、全局变量,在YTCommonCC.h的基础上,包含了和公司Sdk的文件
+</code></pre>
+<h3 id="2-3按类型"><a href="#2-3按类型" class="headerlink" title="2.3按类型"></a>2.3按类型</h3><pre><code>- 普通类 
+    - GB_UserDefault    负责用户数据的读、写、保存
+    - PzModule          负责定义模块类,继承使用
+    - PzMultiLang       负责多语言
+    - QCoreLayer        负责UI的绑定
+    - 弃用
+        - CtrlAudioMgr  负责操作音频
+- 单例类及其单例变量
+    - PzLog         g_log    可视化日志
+    - PzCoreAudio*  g_snd    负责操作音频
+    - CGConst*      g_const  App的常量配置
+    - CGString*     g_str    多语言类
+    - GTUser*       g_gt2    公司GT工具单例,负责统计GT2事件
+    - RedGoogleAnalytics* g_rga 
+                             firebaseSDK单例,负责统计firebase事件
+- 全局变量(不含单例变量)
+    - g_release         debug\release开关
+- 宏
+    - FMT               格式化串
+    - Singleton_Imp     构造单例
+- pz空间
+    主要给全局方法们划分各自的方法空间
+    - node      针对节点的方法
+    - sprite    针对精灵的方法
+    - button    针对按钮的方法
+    - label     针对标签的方法
+    - progress  针对进度条的方法
+    - json      针对Json的方法
+    - http      针对网络通信的方法
+    - ccb       针对ccb的方法
+    - str       针对字符串的方法
+    - debug     针对调试的方法
+    - ab        针对AB测试的方法
+    - res       针对资源管理(缓存)的方法
+    - ptime     针对时间的方法
+    - other     其他方法
+</code></pre>
+<h1 id="二、SDK维护"><a href="#二、SDK维护" class="headerlink" title="二、SDK维护"></a>二、SDK维护</h1><pre><code>- 新类,要求:             
+    文件前缀Pz
+    在YTCommonCC.h中被包含
+    [注:在pzTest中,给出示例代码和详细描述 ;]
+    
+- 新单例,要求:           
+    提供一个访问的全局变量
+    在YTCommon.h被extern和getInstance()
+    [注:在pzTest中,给出示例代码和详细描述 ;]
+    
+- 新全局方法,要求:        
+    放入对应的pz子空间中,mark上作者,方便溯源 ;
+    [注:在pzTest中,给出示例代码和详细描述 ;]
+    
+- 新模块类,要求:          
+    继承PzModule
+    [注:在pzTest中,给出示例代码和详细描述 ;]
+    
+- 新空间
+    在pzTest中实现示例代码
+    在YTCommon.h被using
+    
+- 新目录,要求
+    参照cocos文件夹组织
+</code></pre>
+<h1 id="三、规范"><a href="#三、规范" class="headerlink" title="三、规范"></a>三、规范</h1><pre><code>- 编码约定
+    普通c++ 的 map, vector, list 就足够用了，非算法性能需要，不要使用更高级的类。
+    不要函数过度设计，比如经常一二句的代码包装成函数。
+    写函数前，先去c++ 与 cocos2d 或 我们的sdk里找下，不要重复造轮子。可以把现在函数改的越来越稳定好用。
+    尽量不要用typedef 定义自己的类型，让别人阅读很费劲，老要跳转到定义看类型。
+    非必要，不要过度使用模板，增加别人维护成本。
+    一切从根本需求出发，考虑公共和可维护性，尽量简单简洁是王道。 直接。
+- 个人的未成熟/不常用的类、api或模块,跟随当前项目,直到收录到sdk或弃用
+- 声明与实现分离    
+    声明在.hpp,实现在.cpp;
+    模版方法在头文件末尾实现 ;
+    没必要写inline函数 ;
+- 实现某功能的方式优先级 
+    类组合&gt;类继承
+    普通类&gt;模块类&gt;单例类
+    方法实现&gt;c++模版实现&gt;宏实现
+- 命名
+    - CCB变量前缀
+      Label ：  lb    
+      Button ： btn
+      Node   ： nd
+      Layer ：  ly
+      Sprite ： sp
+    - 普通变量命名    
+      驼峰命名
+- 注释
+    必要
+        ///             用///代替//
+        pzTest()        每个重要的类/方法都要在pzTest找到示例,示例中给出详细描述
+        @author         注明作者
+        @brief          针对重要method, property, class, file, struct,enum的短描述
+    次之
+        @param          重要参数的信息
+        @return         返回值
+    可选
+        @code           嵌入代码段。结尾使用@endcode
+        @see            指明相关的方法/变量
+</code></pre>
+<h1 id="四、常用概念的定义"><a href="#四、常用概念的定义" class="headerlink" title="四、常用概念的定义"></a>四、常用概念的定义</h1><pre><code>- ccb   能构造出场景UI的配置文件
+    - ccbi      ccb发布后的二进制文件,供程序解析
+    - red       ccb的升级版
+    - redream   red发布后的二进制文件,供程序解析
+- 模块    
+    数据、控制、ui组成一个模块,完全独立于游戏的其他部分,但与SDK耦合
+    通过setEnable(true/false)后的功能是正常的
+    仅通过控制层向外提供功能,内部ui、数据是隐藏的 ; 
+    [注:方便索引、移除模块、解耦]
+</code></pre>
+]]></content>
+      <categories>
+        <category>红海无限</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>进程与端口的关系</title>
+    <url>/public/6_%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%AB%AF%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/2021/11/08/</url>
+    <content><![CDATA[<p>进程与端口的关系</p>
+<span id="more"></span>
+
+<h1 id="问"><a href="#问" class="headerlink" title="问:"></a>问:</h1><p>都说端口号是操作系统进行抽象，用来定位一个进程。<br>当一台主机上有两张网卡时，每张网卡上绑定了一个IP地址。<br>那么如果访问不同IP地址的同一端口，比如80，应该不会定位到同一个程序吧。<br>那么端口号就应该是针对于每一张网卡进行的进程抽象，而不是操作系统对每一个进程的抽象吧?  </p>
+<h1 id="答"><a href="#答" class="headerlink" title="答:"></a>答:</h1><p>当计算机接收到报文时，需要将这个报文递交(Deliver)给某个特定的进程。<br>当有(1.1.1.1，50007)——–165364组合报文到达操作系统时,1.1.1.1 是IP地址，50007是端口号,165364是进程号<br>稍后当操作系统TCP/IP协议栈接收到一个IP报文，通过提取目的IP地址(位于IP头)、目的端口号(位于TCP头)，这两者的组合恰好为(1.1.1.1，50007)。<br>操作系统查询一下小本子，立马就得知这是(进程ID= 168324)进程A的，然后通知该进程A前来将报文取走。<br>进程B也想如法炮制：Bind (‘1.1.1.1’, 50007)，很遗憾，操作系统拒绝了。<br>拒绝的消息如下：“builtins.OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。”<br>意味着(1.1.1.1， 50007)这个组合能唯一识别一个进程，这两者的组合就是一个主键<br>通俗地说，在数据库管理系统，主键可以唯一锁定一条记录。<br>进程B(进程ID= 168323)心有不甘，发现计算机还有其它接口地址2.2.2.2，于是通过Bind (‘2.2.2.2’, 50007)，这次成功了。<br>操作系统老爷爷又颤颤巍巍掏出小本子记录了下来： (2.2.2.2，50007)——–168323<br>这样当有(2.2.2.2 ， 50007)组合报文到达时，操作系统可以将其转交给(进程号= 168323)进程B。<br>问题来了，进程A与进程B是什么关系？ 进程A、B可以是代码完全不同的程序，也可以是代码相同的程序，在自己独立的内存空间运行的不同实列(Instance)。<br>好比你同时打开多个Word程序，这些Word程序使用相同的代码，但是他们是多个Word实例。<br>问题又来了，如果进程A的代码真的是那样编码，如果放到其它计算机上执行，会遇到问题，因为其它计算机的IP地址可能≠1.1.1.1。为了提高代码的健壮性、可移植性，通常会使用这样的代码： Bind (‘ ’, 50007) 其中‘’表示任何IP地址。<br>换句话说，不Care计算机的接口IP地址。<br>这个IP地址可以是127.0.0.1，也可以是1.1.1.1， 也可以是192.168.1.1，随便多少都行。<br>那么这个程序可以放到任何计算机上执行。<br>在同一台机器上一个进程B也这样执行：Bind (‘ ’, 50007)，可以哇？ 不可以，因为与进程A冲突！<br>进程B可以Bind (‘ 1.1.1.1’, 50007)，可以哇？ 同样不可以，依然与进程A冲突。因为1.1.1.1是所有IP地址的子集。<br>进程B心慌了，那怎么可以呢？<br>操作系统老爷爷不紧不慢地说，只要别再使用端口50007就可以了。<br>进程B于是执行代码如下： Bind (‘ ’, 50008)， 可以哇？ 恭喜你，当然可以！<br>通常服务器代码，都使用类似Bind (‘ ’, 50007) 方式执行，所以50007这个端口号可以唯一识别一个进程，这就是端口号可以唯一识别进程号的由来！  </p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Cocos2d导入Box2D源码库</title>
+    <url>/public/7_Cocos2dx_%E6%8E%A5%E5%85%A5Box2d/2021/11/08/</url>
+    <content><![CDATA[<p>XCode导入Box2D源码库</p>
+<span id="more"></span>
+
+<h1 id="XCode导入Box2D源码库"><a href="#XCode导入Box2D源码库" class="headerlink" title="XCode导入Box2D源码库"></a>XCode导入Box2D源码库</h1><h2 id="1-删除Cocos2dx自带的Box2d"><a href="#1-删除Cocos2dx自带的Box2d" class="headerlink" title="1.删除Cocos2dx自带的Box2d"></a>1.删除Cocos2dx自带的Box2d</h2><p>a.双击项目,我这里是“cocos2d_tests”，打开配置页。<br>找到配置中“User Header Search Paths”项，该项是项目使用项目以外的包进行调试和发布的路径。双击该项能同时修改“Debug”和”Release”的路径。找到项目自带的的Box2D路径，删除。</p>
+<p>b.双击项目库”cocos2d_libs.xcodeproj”，打开配置页。<br>找到配置中“User Header Search Paths”项，该项是项目使用项目以外的包进行调试和发布的路径。双击该项能同时修改“Debug”和”Release”的路径。找到项目自带的的Box2D路径，删除。</p>
+<p>c.打开项目下Frameworks文件夹，删除含有Box2D的字眼的“XXX.framework”项。</p>
+<h2 id="2-导入源码并配置"><a href="#2-导入源码并配置" class="headerlink" title="2.导入源码并配置"></a>2.导入源码并配置</h2><p>a .下载Box2d源码，文件名“Box2D-master”</p>
+<p>b.把文件夹“Box2D-master”拖入”cocos2d_libs.xcodeproj”下的”external“文件夹下。</p>
+<p>c.双击项目，打开配置页。<br>找到配置中“User Header Search Paths”项，参照cocos2dX自带库的路径，把“Box2D-master”的路径写进去。</p>
+<p>d.双击项目库，打开配置页。<br>找到配置中“User Header Search Paths”项，参照cocos2dX自带库的路径，把“Box2D-master”的路径写进去。</p>
+<p>e.完成。</p>
+]]></content>
+      <categories>
+        <category>cocos2d</category>
+        <category>box2d</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Git</title>
+    <url>/public/8_Git/2021/11/08/</url>
+    <content><![CDATA[<p>代码找回、远程仓库修改、其他命令</p>
+<span id="more"></span>
+<h1 id="一、git本地丢失代码找回"><a href="#一、git本地丢失代码找回" class="headerlink" title="一、git本地丢失代码找回"></a>一、git本地丢失代码找回</h1><p>终端A执行：<code>git reflog</code><br>终端B执行：<code>git reset --hard HEAD@&#123;7&#125;</code></p>
+<h1 id="二、修改本地仓库的远程地址"><a href="#二、修改本地仓库的远程地址" class="headerlink" title="二、修改本地仓库的远程地址"></a>二、修改本地仓库的远程地址</h1><ul>
+<li>查看当前的远程仓库<br><code>git remote -v</code>  </li>
+<li>修改为想要设置的远程仓库<br><code>git remote set-url origin https://where you want to put your repository to.git</code>  </li>
+<li>验证一下<br><code>git remote -v</code>  </li>
+</ul>
+<h1 id="三、其他命令"><a href="#三、其他命令" class="headerlink" title="三、其他命令"></a>三、其他命令</h1><ul>
+<li><code>git add xxx</code><br>前提:仓库已具有xxx文件  </li>
+<li><code>git config commit</code><br>前提:git config –global user.name=”” user.email=””</li>
+<li><code>git push xxx</code><br>前提:git remote master url 已创建分支  </li>
+</ul>
+<p>注：<br>当前github已不支持用户名密码push,要使用token/ssh<br>token:可访问公共仓库、提交状态、部署状态</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>配置SSL证书</title>
+    <url>/public/9_Nginx_%E9%85%8D%E7%BD%AESSL%E8%AF%81%E4%B9%A6/2021/11/08/</url>
+    <content><![CDATA[<p>nginx配置ssl证书</p>
+<span id="more"></span>
+
+<h1 id="一、SSL证书"><a href="#一、SSL证书" class="headerlink" title="一、SSL证书"></a>一、SSL证书</h1><ul>
+<li>vim打开nginx.conf</li>
+<li>找到TLS,配置如下属性  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssl_certificate &quot;/xxx/xxx/xxx.crt&quot;;  </span><br><span class="line">ssl_certificate_key &quot;/xxx/xxx/xxx.key&quot;;  </span><br><span class="line">location / &#123;    </span><br><span class="line">  proxy_pass http://localhost:4000;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>输入:wq!,强制写入并退出vim</li>
+</ul>
+]]></content>
+      <categories>
+        <category>ssl</category>
+        <category>nginx</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Cocos2d导入Box2D源码库</title>
     <url>/public/Cocos2dx%E6%8E%A5%E5%85%A5Box2d/2021/11/08/</url>
     <content><![CDATA[<p>XCode导入Box2D源码库</p>
@@ -310,9 +966,9 @@
         <category>防火墙</category>
       </categories>
       <tags>
+        <tag>ftp</tag>
         <tag>linux</tag>
         <tag>计算机</tag>
-        <tag>ftp</tag>
         <tag>防火墙</tag>
       </tags>
   </entry>
@@ -348,9 +1004,9 @@
         <category>ftp</category>
       </categories>
       <tags>
+        <tag>ftp</tag>
         <tag>linux</tag>
         <tag>计算机</tag>
-        <tag>ftp</tag>
         <tag>技术</tag>
       </tags>
   </entry>
@@ -502,9 +1158,9 @@
         <category>ftp</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-        <tag>ftp</tag>
         <tag>软件</tag>
+        <tag>ftp</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -594,9 +1250,9 @@
         <category>防火墙</category>
       </categories>
       <tags>
+        <tag>ftp</tag>
         <tag>linux</tag>
         <tag>计算机</tag>
-        <tag>ftp</tag>
         <tag>防火墙</tag>
       </tags>
   </entry>
