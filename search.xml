@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JetBrains免费破解</title>
+    <url>/public/10_JetBrains_%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3/2021/11/08/</url>
+    <content><![CDATA[<p>用插件重置jetbrains</p>
+<span id="more"></span>
+<h1 id="一、插件重置jetbrains"><a href="#一、插件重置jetbrains" class="headerlink" title="一、插件重置jetbrains"></a>一、插件重置jetbrains</h1><ul>
+<li>找到窗口<br><code>WebStorm/Preferences-&gt; Plugins-&gt;设置-&gt;Manage Plugin Repositories</code></li>
+<li>添加第三方插件仓库地址：<br><code>https://plugins.zhile.io</code></li>
+<li>在窗口WebStorm/Preferences-&gt;Plugins/Marketplace搜索并安装<br><code>IDE Eval Reset </code></li>
+<li>执行<br><code>Help-&gt;Eval Rest</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>jetbrains</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>jetbrains</tag>
+        <tag>破解</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机常见概念</title>
     <url>/public/11_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/2021/11/08/</url>
     <content><![CDATA[<p>函数、闭包、范式</p>
@@ -634,26 +655,5 @@ _popper-&gt;pop()      ///开始弹
         <category>ssl</category>
         <category>nginx</category>
       </categories>
-  </entry>
-  <entry>
-    <title>JetBrains免费破解</title>
-    <url>/public/10_JetBrains_%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3/2021/11/08/</url>
-    <content><![CDATA[<p>用插件重置jetbrains</p>
-<span id="more"></span>
-<h1 id="一、插件重置jetbrains"><a href="#一、插件重置jetbrains" class="headerlink" title="一、插件重置jetbrains"></a>一、插件重置jetbrains</h1><ul>
-<li>找到窗口<br><code>WebStorm/Preferences-&gt; Plugins-&gt;设置-&gt;Manage Plugin Repositories</code></li>
-<li>添加第三方插件仓库地址：<br><code>https://plugins.zhile.io</code></li>
-<li>在窗口WebStorm/Preferences-&gt;Plugins/Marketplace搜索并安装<br><code>IDE Eval Reset </code></li>
-<li>执行<br><code>Help-&gt;Eval Rest</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>jetbrains</category>
-        <category>破解</category>
-      </categories>
-      <tags>
-        <tag>jetbrains</tag>
-        <tag>破解</tag>
-      </tags>
   </entry>
 </search>
