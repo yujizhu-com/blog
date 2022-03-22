@@ -282,14 +282,14 @@ _popper-&gt;pop()      ///开始弹
         #   protected
 </code></pre>
 <h2 id="前提2：了解类的关系"><a href="#前提2：了解类的关系" class="headerlink" title="前提2：了解类的关系"></a>前提2：了解类的关系</h2><ul>
-<li>泛化（generalization)<br><img src="http://blog.yujizhu.com/pic/17_generalization.png"></li>
-<li>实现(realize）<br><img src="http://blog.yujizhu.com/pic/17_realize.png"></li>
-<li>依赖(dependency)<br><img src="http://blog.yujizhu.com/pic/17_dependency.png"></li>
-<li>关联(association）<br><img src="http://blog.yujizhu.com/pic/17_association.png"></li>
-<li>聚合(aggregation)<br><img src="http://blog.yujizhu.com/pic/17_aggregation.png"></li>
-<li>组合(composition)<br><img src="http://blog.yujizhu.com/pic/17_composition.png"></li>
+<li>泛化（generalization)<br><img src="/public/.com//17_generalization.png"></li>
+<li>实现(realize）<br><img src="/public/.com//17_realize.png"></li>
+<li>依赖(dependency)<br><img src="/public/.com//17_dependency.png"></li>
+<li>关联(association）<br><img src="/public/.com//17_association.png"></li>
+<li>聚合(aggregation)<br><img src="/public/.com//17_aggregation.png"></li>
+<li>组合(composition)<br><img src="/public/.com//17_composition.png"></li>
 </ul>
-<h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h2><p><img src="http://blog.yujizhu.com/pic/17_model.png">                  </p>
+<h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h2><p><img src="/public/.com//17_model.png">                  </p>
 ]]></content>
       <categories>
         <category>面向对象</category>
@@ -703,5 +703,10 @@ _popper-&gt;pop()      ///开始弹
         <category>ssl</category>
         <category>nginx</category>
       </categories>
+  </entry>
+  <entry>
+    <title>xxx</title>
+    <url>/public/xxx/2022/03/22/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
