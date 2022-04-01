@@ -335,6 +335,13 @@
   </url>
   
   <url>
+    <loc>http://yujizhu.com/categories/ftp/</loc>
+    <lastmod>2022-04-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yujizhu.com/categories/git/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>daily</changefreq>
@@ -343,13 +350,6 @@
   
   <url>
     <loc>http://yujizhu.com/categories/ssl/</loc>
-    <lastmod>2022-04-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yujizhu.com/categories/ftp/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
