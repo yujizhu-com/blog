@@ -281,14 +281,14 @@ _popper-&gt;pop()      ///开始弹
         #   protected
 </code></pre>
 <h2 id="前提2：了解类的关系"><a href="#前提2：了解类的关系" class="headerlink" title="前提2：了解类的关系"></a>前提2：了解类的关系</h2><ul>
-<li>泛化（generalization)<br><img src="/public/.com//17_generalization.png" alt="泛化"></li>
-<li>实现(realize）<br><img src="/public/.com//17_realize.png" alt="实现"></li>
-<li>依赖(dependency)<br><img src="/public/.com//17_dependency.png" alt="依赖"></li>
-<li>关联(association）<br><img src="/public/.com//17_association.png" alt="关联"></li>
-<li>聚合(aggregation)<br><img src="/public/.com//17_aggregation.png" alt="聚合"></li>
-<li>组合(composition)<br><img src="/public/.com//17_composition.png" alt="组合"></li>
+<li>泛化（generalization)<br><img src="/public/.com//17_generalization.png"></li>
+<li>实现(realize）<br><img src="/public/.com//17_realize.png"></li>
+<li>依赖(dependency)<br><img src="/public/.com//17_dependency.png"></li>
+<li>关联(association）<br><img src="/public/.com//17_association.png"></li>
+<li>聚合(aggregation)<br><img src="/public/.com//17_aggregation.png"></li>
+<li>组合(composition)<br><img src="/public/.com//17_composition.png"></li>
 </ul>
-<h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h2><p><img src="/public/.com//17_model.png" alt="对象建模">                  </p>
+<h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h2><p><img src="/public/.com//17_model.png">                  </p>
 ]]></content>
       <categories>
         <category>面向对象</category>
