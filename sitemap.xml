@@ -251,20 +251,6 @@
   </url>
   
   <url>
-    <loc>http://yujizhu.com/categories/jetbrains/%E7%A0%B4%E8%A7%A3/</loc>
-    <lastmod>2022-04-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yujizhu.com/categories/%E7%BC%96%E7%A8%8B/%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2022-04-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yujizhu.com/categories/puzzle/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>daily</changefreq>
@@ -279,7 +265,21 @@
   </url>
   
   <url>
+    <loc>http://yujizhu.com/categories/jetbrains/%E7%A0%B4%E8%A7%A3/</loc>
+    <lastmod>2022-04-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yujizhu.com/categories/%E7%BC%96%E7%A0%81/</loc>
+    <lastmod>2022-04-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yujizhu.com/categories/%E7%BC%96%E7%A8%8B/%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
