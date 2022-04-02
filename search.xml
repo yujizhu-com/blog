@@ -376,6 +376,26 @@ _popper-&gt;pop()      ///开始弹
       </tags>
   </entry>
   <entry>
+    <title>VisualStudio 2019配置Open GL freeglut或glfw3</title>
+    <url>/public/20_VisualStudio2019%E9%85%8D%E7%BD%AEfreeglut%E6%88%96glfw3/</url>
+    <content><![CDATA[<html><head></head><body><p>错误集锦</p>
+<span id="more"></span>
+
+<h1 id="一-错误集锦"><a href="#一-错误集锦" class="headerlink" title="一.错误集锦"></a>一.错误集锦</h1><pre><code>错误1：
+    LNK2019 无法解析的外部符号 main，
+    该符号在函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中被引用 。
+    G:\...\MSVCRTD.lib(exe_main.obj)。
+解决办法
+    右键项目-&gt;连接器-&gt;系统-&gt;子系统，在子系统中选择窗口即可。
+原因：子系统的选择影响了链接器选择的入口函数，也即没有告知操作系统怎么运行.exe文件。
+    选择了窗口后，操作系统就知道如何运行exe文件了，就能运行啦                 
+</code></pre>
+</body></html>]]></content>
+      <categories>
+        <category>OpenGL</category>
+      </categories>
+  </entry>
+  <entry>
     <title>firewall防火墙的简单使用</title>
     <url>/public/2_Linux_%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<html><head></head><body><p>启动、刷新、服务管理、端口管理、查看状态</p>
