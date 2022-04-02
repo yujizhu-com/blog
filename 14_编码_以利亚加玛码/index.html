@@ -279,7 +279,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>二进制编码，Elias gamma code(以利亚加玛码)</p>
+        <html><head></head><body><p>二进制编码，Elias gamma code(以利亚加玛码)</p>
 <span id="more"></span>
 <h1 id="Elias-gamma-code-保加利亚码"><a href="#Elias-gamma-code-保加利亚码" class="headerlink" title="Elias gamma code(保加利亚码)"></a>Elias gamma code(保加利亚码)</h1><p>1.简介</p>
 <p>Elias gamma code 是一种用于正整数的通用编码，由Peter Elias发明。常被用于无法事先得知上界的正整数，即一种变长编码方式。<br>CocosBuilder的ccb文件中的整数正是采用了这种编码方式，被编码到了ccbi文件中(ccbi是二进制文件)。<br>在Cocos2dx引擎中，CCBReader利用了Elias gamma code 的解码方式，将ccbi文件中的整数解析出来。</p>
@@ -306,7 +306,7 @@
 <p>编码前，对整数+1，使0,1,2,3…-&gt;1,2,3,4…,再进行编码。<br>解码后，对所得整数-1，使 1,2,3,4…-&gt;0,1,2,3…,即可还原。<br>6.2 这种编码只适用正整数编码，</p>
 <p>那要对有符号整数进行编码怎么办？ 我们可以通过分段函数把有符号整数一一映射成正整数。<br>编码前，</p>
 <p>对整数X&gt;=0,进行映射X=2*X+1,使0,1,2,3…-&gt;1,3,5,7…<br>对整数X&lt;0,进行映射X=-2*X,使-1,-2,-3…-&gt;2,4,6…<br>解码后,判断所得整数的奇偶性，利用函数，即可还原。</p>
-
+</body></html>
     </div>
 
     

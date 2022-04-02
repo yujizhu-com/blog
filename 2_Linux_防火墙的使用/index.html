@@ -285,13 +285,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>启动、刷新、服务管理、端口管理、查看状态</p>
+        <html><head></head><body><p>启动、刷新、服务管理、端口管理、查看状态</p>
 <span id="more"></span>
 
 
 <p>一、基础用法<br>    启动<br>    <code>systemctl start/stop/restart firewalld</code><br>    查看<br>    <code>firewall-cmd --list-all</code><br>    加服务<br>    <code>firewall-cmd --permanent --add-service=http</code><br>    移除服务<br>    <code>firewall-cmd --permanent --remove-service=http</code><br>    加端口<br>    <code>firewall-cmd --permanent --add-port=8080/tcp</code><br>    移除端口<br>    <code>firewall-cmd --permanent --add-port=8080/tcp</code><br>    重载<br>    <code>firewall-cmd --reload 但凡改动过一处,都要刷新</code>    </p>
 <p>@see ftp<br>若启动了防火墙,客户机要ftp被动连接服务器告知的端口,那么服务器不仅要开放21端口，还要开放1025–5000的所有端口;此时用ftp主动链接即可</p>
-
+</body></html>
     </div>
 
     

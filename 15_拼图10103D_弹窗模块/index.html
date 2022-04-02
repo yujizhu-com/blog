@@ -279,7 +279,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>拼图10103D-弹框模块</p>
+        <html><head></head><body><p>拼图10103D-弹框模块</p>
 <span id="more"></span>
 <hr>
 <h1 id="一、需求分析"><a href="#一、需求分析" class="headerlink" title="一、需求分析"></a>一、需求分析</h1><pre><code>拼图走廊会展示各种弹框。
@@ -322,18 +322,18 @@ ___
 ___
 </code></pre>
 <h1 id="三、示例"><a href="#三、示例" class="headerlink" title="三、示例"></a>三、示例</h1><pre><code>_popper-&gt;clear()    ///清空已注册但还未弹窗口
-_popper-&gt;addWindow(1,1, []()-&gt;Ref*&#123;return window;&#125;)     ///注册1组,优先级1的弹框
-_popper-&gt;addWindow(1,2, []()-&gt;Ref*&#123;return window;&#125;)    ///注册1组,优先级2的弹框
-_popper-&gt;addWindow(2,1, []()-&gt;Ref*&#123;return window;&#125;)    ///注册2组,优先级1的弹框
-_popper-&gt;addWindow(2,2, []()-&gt;Ref*&#123;return window;&#125;)    ///注册2组,优先级2的弹框
-_popper-&gt;addWindow(2,3, []()-&gt;Ref*&#123;return window;&#125;)    ///注册2组,优先级3的弹框
+_popper-&gt;addWindow(1,1, []()-&gt;Ref*{return window;})     ///注册1组,优先级1的弹框
+_popper-&gt;addWindow(1,2, []()-&gt;Ref*{return window;})    ///注册1组,优先级2的弹框
+_popper-&gt;addWindow(2,1, []()-&gt;Ref*{return window;})    ///注册2组,优先级1的弹框
+_popper-&gt;addWindow(2,2, []()-&gt;Ref*{return window;})    ///注册2组,优先级2的弹框
+_popper-&gt;addWindow(2,3, []()-&gt;Ref*{return window;})    ///注册2组,优先级3的弹框
 _popper-&gt;pop()      ///开始弹
 ....
 _popper-&gt;clear()    ///清空已注册但还未弹窗口
-_popper-&gt;addWindow(1,1, []()-&gt;Ref*&#123;return window;&#125;)      ///注册1组,优先级1的弹框
+_popper-&gt;addWindow(1,1, []()-&gt;Ref*{return window;})      ///注册1组,优先级1的弹框
 _popper-&gt;pop()      ///开始弹
 </code></pre>
-
+</body></html>
     </div>
 
     

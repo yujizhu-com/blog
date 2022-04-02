@@ -279,9 +279,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>代码找回、远程仓库修改、其他命令</p>
+        <html><head></head><body><p>代码找回、远程仓库修改、其他命令</p>
 <span id="more"></span>
-<h1 id="一、git本地丢失代码找回"><a href="#一、git本地丢失代码找回" class="headerlink" title="一、git本地丢失代码找回"></a>一、git本地丢失代码找回</h1><p>终端A执行：<code>git reflog</code><br>终端B执行：<code>git reset --hard HEAD@&#123;7&#125;</code></p>
+<h1 id="一、git本地丢失代码找回"><a href="#一、git本地丢失代码找回" class="headerlink" title="一、git本地丢失代码找回"></a>一、git本地丢失代码找回</h1><p>终端A执行：<code>git reflog</code><br>终端B执行：<code>git reset --hard HEAD@{7}</code></p>
 <h1 id="二、修改本地仓库的远程地址"><a href="#二、修改本地仓库的远程地址" class="headerlink" title="二、修改本地仓库的远程地址"></a>二、修改本地仓库的远程地址</h1><ul>
 <li>查看当前的远程仓库<br><code>git remote -v</code>  </li>
 <li>修改为想要设置的远程仓库<br><code>git remote set-url origin https://where you want to put your repository to.git</code>  </li>
@@ -293,7 +293,7 @@
 <li><code>git push xxx</code><br>前提:git remote master url 已创建分支  </li>
 </ul>
 <p>注：<br>当前github已不支持用户名密码push,要使用token/ssh<br>token:可访问公共仓库、提交状态、部署状态</p>
-
+</body></html>
     </div>
 
     
