@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/public/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/public/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yujizhu.com","root":"/public/","images":"/public/images","scheme":"Gemini","darkmode":true,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/public/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/public/js/config.js"></script>
+<meta name="description" content="函数、闭包、范式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机常见概念">
+<meta property="og:url" content="http://yujizhu.com/11_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/2021/11/08/index.html">
+<meta property="og:site_name" content="小桥流水">
+<meta property="og:description" content="函数、闭包、范式">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-11-08T14:47:35.000Z">
+<meta property="article:modified_time" content="2021-11-08T14:47:35.000Z">
+<meta property="article:author" content="北京红海-余纪柱">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="函数">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://yujizhu.com/11_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/2021/11/08/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://yujizhu.com/11_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/2021/11/08/","path":"11_编程范式/2021/11/08/","title":"计算机常见概念"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>计算机常见概念 | 小桥流水</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4SSXX5CFQ"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-B4SSXX5CFQ","only_pageview":false}</script>
+  <script src="/public/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/public/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/public/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">小桥流水</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">枯木逢春绿,涸泽遇暖清</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/public/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/public/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/public/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">10</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/public/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">21</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/public/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">17</span></a></li>
+        <li class="menu-item menu-item-schedule"><a href="/public/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81GC"><span class="nav-number">1.</span> <span class="nav-text">一、GC</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E7%9A%84%E5%8F%91%E5%B1%95"><span class="nav-number">2.</span> <span class="nav-text">二、编程范式的发展</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%BB%E6%B5%81%E8%8C%83%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">三、语言的主流范式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E6%A6%82%E5%BF%B5"><span class="nav-number">4.</span> <span class="nav-text">四、概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1%E5%9B%9B%E6%AD%A5"><span class="nav-number">5.</span> <span class="nav-text">五、面向对象建模四步</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%91%BD%E4%BB%A4%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="nav-number">6.</span> <span class="nav-text">六、命令式编程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%BC%96%E7%A8%8B-%E5%AD%90%E8%8C%83%E5%BC%8F"><span class="nav-number">7.</span> <span class="nav-text">七、声明式编程-子范式</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">北京红海-余纪柱</p>
+  <div class="site-description" itemprop="description">借风唤花醒,聊赠一枝春</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/public/archives/">
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/public/categories/">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/public/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yujizhu-com" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yujizhu-com" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yujizhu@petalmail.com" title="E-Mail → mailto:yujizhu@petalmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/yujizhu-com" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yujizhu.com/11_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/2021/11/08/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/public/images/avatar.gif">
+      <meta itemprop="name" content="北京红海-余纪柱">
+      <meta itemprop="description" content="借风唤花醒,聊赠一枝春">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小桥流水">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          计算机常见概念
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-11-08 22:47:35" itemprop="dateCreated datePublished" datetime="2021-11-08T22:47:35+08:00">2021-11-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/public/categories/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/public/categories/%E7%BC%96%E7%A8%8B/%E5%87%BD%E6%95%B0/" itemprop="url" rel="index"><span itemprop="name">函数</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>函数、闭包、范式</p>
+<span id="more"></span>
+<h1 id="一、GC"><a href="#一、GC" class="headerlink" title="一、GC"></a>一、GC</h1><p>Garbage Collection垃圾回收机制</p>
+<h1 id="二、编程范式的发展"><a href="#二、编程范式的发展" class="headerlink" title="二、编程范式的发展"></a>二、编程范式的发展</h1><p>非结构化 60年代(195x) goto语句泛滥<br>结构化、函数式编程     70年代<br>面向对象    90年代<br>多范式融合 (21世纪20年代)    </p>
+<h1 id="三、语言的主流范式"><a href="#三、语言的主流范式" class="headerlink" title="三、语言的主流范式"></a>三、语言的主流范式</h1><p>C 结构化<br>Java 面向对象</p>
+<h1 id="四、概念"><a href="#四、概念" class="headerlink" title="四、概念"></a>四、概念</h1><ul>
+<li>编程范式<br>如何编写程序的方法论</li>
+<li>结构化编程<br>把运算过程尽量写成一系列嵌套的函数调用<br>也称过程式编程,面向过程编程</li>
+<li>函数<br>函数式编程中的函数不是结构化编程中的函数，而是数学中的函数，结构化编程中    的函数是一个过程（Procedure） </li>
+<li>普通程序<br>程序 = 数据结构 + 算法</li>
+<li>函数式编程程序<br>程序 = 数据 + 函数</li>
+<li>高阶函数<br>高阶函数，是指一种比较特殊的函数，它们可以接收函数作为输入，或者返回一个    函数作为输出</li>
+<li>闭包<br>由函数及其相关的引用环境组合而成的实体，即闭包 = 函数 + 引用环境<br>闭包是一种保护私有变量的机制，在函数执行时形成私有的作用域，保护里面的私    有变量不受外界干扰。</li>
+<li>DDD<br>领域驱动设计, Domain-Driven Design</li>
+<li>函数式编程<br>即只关注做什么而不是怎么做<br>函数式编程不仅仅局限于声明式编程。<br>函数式编程最重要的特点是“函数第一位”，即函数可以出现在任何地方，比如可以把函数作为参数传递给另一个函数，不仅如此你还可以将函数作为返回值</li>
+<li>声明式编程<br>如SQL编程<br>告诉计算机应该做什么，但不指定具体要怎么做<br>不需要创建变量用来存储数据<br>它不包含循环控制的代码如 for， while  <h1 id="五、面向对象建模四步"><a href="#五、面向对象建模四步" class="headerlink" title="五、面向对象建模四步"></a>五、面向对象建模四步</h1>需求分析建模<br>面向对象分析（OOA）<br>面向对象设计（OOD）<br>面向对象编码（OOP）<h1 id="六、命令式编程"><a href="#六、命令式编程" class="headerlink" title="六、命令式编程"></a>六、命令式编程</h1>又称指令式编程<br>与声明式对立<h1 id="七、声明式编程-子范式"><a href="#七、声明式编程-子范式" class="headerlink" title="七、声明式编程-子范式"></a>七、声明式编程-子范式</h1></li>
+<li>约束式     </li>
+<li>函数式     </li>
+<li>逻辑式<br>如Prolog声明关系并且对关系进行提问</li>
+<li>领域专属语言<ul>
+<li>声明式领域专属语言（DSLs）包括</li>
+<li>语法分析器yacc，</li>
+<li>编译说明语言Make，</li>
+<li>管理配置语言Puppet，</li>
+<li>正则表达式和SQL的一些子集（例如Select queries等）</li>
+<li>很多文本标记语言,如HTML、MXML、XAML和XSLT也是声明式的</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/public/tags/%E7%BC%96%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 编程</a>
+              <a href="/public/tags/%E5%87%BD%E6%95%B0/" rel="tag"><i class="fa fa-tag"></i> 函数</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/public/10_JetBrains_%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3/2021/11/08/" rel="prev" title="JetBrains免费破解">
+                  <i class="fa fa-chevron-left"></i> JetBrains免费破解
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/public/12_%E6%8B%BC%E5%9B%BE10103D_%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/2022/02/27/" rel="next" title="分组对象化">
+                  分组对象化 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">京ICP备2021032200号-1 </a>
+      <img src="http://blog.yujizhu.com/pic/beian.png" alt=""><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502048992" rel="noopener" target="_blank">京公网安备11010502048992号 </a>
+  </div>
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">北京红海-余纪柱</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/public/js/comments.js"></script><script src="/public/js/utils.js"></script><script src="/public/js/next-boot.js"></script><script src="/public/js/bookmark.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/public/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
