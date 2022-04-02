@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>JetBrains免费破解</title>
-    <url>/public/10_JetBrains_%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3/2021/11/08/</url>
+    <url>/public/10_JetBrains_%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3/</url>
     <content><![CDATA[<p>用插件重置jetbrains</p>
 <span id="more"></span>
 <h1 id="一、插件重置jetbrains"><a href="#一、插件重置jetbrains" class="headerlink" title="一、插件重置jetbrains"></a>一、插件重置jetbrains</h1><ul>
@@ -23,7 +23,7 @@
   </entry>
   <entry>
     <title>计算机常见概念</title>
-    <url>/public/11_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/2021/11/08/</url>
+    <url>/public/11_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/</url>
     <content><![CDATA[<p>函数、闭包、范式</p>
 <span id="more"></span>
 <h1 id="一、GC"><a href="#一、GC" class="headerlink" title="一、GC"></a>一、GC</h1><p>Garbage Collection垃圾回收机制</p>
@@ -65,7 +65,7 @@
   </entry>
   <entry>
     <title>分组对象化</title>
-    <url>/public/12_%E6%8B%BC%E5%9B%BE10103D_%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/2022/02/27/</url>
+    <url>/public/12_%E6%8B%BC%E5%9B%BE10103D_%E5%88%86%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%8C%96/</url>
     <content><![CDATA[<p>拼图10103D的对象化分组，与传统分组的比较</p>
 <span id="more"></span>
 
@@ -105,7 +105,7 @@
   </entry>
   <entry>
     <title>拼图10103D-拼图下载模块</title>
-    <url>/public/13_%E6%8B%BC%E5%9B%BE10103D_%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9D%97/2022/03/02/</url>
+    <url>/public/13_%E6%8B%BC%E5%9B%BE10103D_%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9D%97/</url>
     <content><![CDATA[<p>拼图10103D-拼图下载模块</p>
 <span id="more"></span>
 
@@ -137,7 +137,7 @@
   </entry>
   <entry>
     <title>Elias gamma code(以利亚加玛码)</title>
-    <url>/public/14_%E7%BC%96%E7%A0%81_%E4%BB%A5%E5%88%A9%E4%BA%9A%E5%8A%A0%E7%8E%9B%E7%A0%81/2022/03/02/</url>
+    <url>/public/14_%E7%BC%96%E7%A0%81_%E4%BB%A5%E5%88%A9%E4%BA%9A%E5%8A%A0%E7%8E%9B%E7%A0%81/</url>
     <content><![CDATA[<p>二进制编码，Elias gamma code(以利亚加玛码)</p>
 <span id="more"></span>
 <h1 id="Elias-gamma-code-保加利亚码"><a href="#Elias-gamma-code-保加利亚码" class="headerlink" title="Elias gamma code(保加利亚码)"></a>Elias gamma code(保加利亚码)</h1><p>1.简介</p>
@@ -172,7 +172,7 @@
   </entry>
   <entry>
     <title>拼图10103D-弹窗模块</title>
-    <url>/public/15_%E6%8B%BC%E5%9B%BE10103D_%E5%BC%B9%E7%AA%97%E6%A8%A1%E5%9D%97/2022/03/21/</url>
+    <url>/public/15_%E6%8B%BC%E5%9B%BE10103D_%E5%BC%B9%E7%AA%97%E6%A8%A1%E5%9D%97/</url>
     <content><![CDATA[<p>拼图10103D-弹框模块</p>
 <span id="more"></span>
 <hr>
@@ -234,7 +234,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>缩写大全</title>
-    <url>/public/16_%E7%BC%A9%E5%86%99%E5%A4%A7%E5%85%A8/2022/03/21/</url>
+    <url>/public/16_%E7%BC%A9%E5%86%99%E5%A4%A7%E5%85%A8/</url>
     <content><![CDATA[<p>缩写大全</p>
 <span id="more"></span>
 
@@ -248,7 +248,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>面向对象建模</title>
-    <url>/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/2022/03/22/</url>
+    <url>/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/</url>
     <content><![CDATA[<p>面向对象建模</p>
 <span id="more"></span>
 
@@ -281,14 +281,14 @@ _popper-&gt;pop()      ///开始弹
         #   protected
 </code></pre>
 <h2 id="前提2：了解类的关系"><a href="#前提2：了解类的关系" class="headerlink" title="前提2：了解类的关系"></a>前提2：了解类的关系</h2><ul>
-<li>泛化（generalization)<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/2022/03/22/17_generalization.png"></li>
-<li>实现(realize）<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/2022/03/22/17_realize.png"></li>
-<li>依赖(dependency)<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/2022/03/22/17_dependency.png"></li>
-<li>关联(association）<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/2022/03/22/17_association.png"></li>
-<li>聚合(aggregation)<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/2022/03/22/17_aggregation.png"></li>
-<li>组合(composition)<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/2022/03/22/17_composition.png"></li>
+<li>泛化（generalization)<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/17_generalization.png"></li>
+<li>实现(realize）<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/17_realize.png"></li>
+<li>依赖(dependency)<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/17_dependency.png"></li>
+<li>关联(association）<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/17_association.png"></li>
+<li>聚合(aggregation)<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/17_aggregation.png"></li>
+<li>组合(composition)<br><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/17_composition.png"></li>
 </ul>
-<h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h2><p><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/2022/03/22/17_model.png">                  </p>
+<h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h2><p><img src="/public/17_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BB%BA%E6%A8%A1/17_model.png">                  </p>
 ]]></content>
       <categories>
         <category>面向对象</category>
@@ -296,7 +296,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>解决Transmit的乱码问题</title>
-    <url>/public/1_Transmit_%E8%A7%A3%E5%86%B3%E6%98%BE%E7%A4%BA%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/2021/10/12/</url>
+    <url>/public/1_Transmit_%E8%A7%A3%E5%86%B3%E6%98%BE%E7%A4%BA%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>Transmit文件名乱码</p>
 <span id="more"></span>
 
@@ -318,7 +318,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>firewall防火墙的简单使用</title>
-    <url>/public/2_Linux_%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E4%BD%BF%E7%94%A8/2021/10/12/</url>
+    <url>/public/2_Linux_%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>启动、刷新、服务管理、端口管理、查看状态</p>
 <span id="more"></span>
 
@@ -339,7 +339,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>ftp无法上传,无法下载,无法链接</title>
-    <url>/public/3_Ftp_%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E3%80%81%E7%99%BB%E5%BD%95/2021/10/12/</url>
+    <url>/public/3_Ftp_%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E3%80%81%E7%99%BB%E5%BD%95/</url>
     <content><![CDATA[<p>主动与被动连接、文件无法下载/上传、无法登录、mac无命令等</p>
 <span id="more"></span>
 
@@ -377,7 +377,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>linux一些命令缩写的含义</title>
-    <url>/public/4_Linux_%E5%B8%B8%E8%A7%81%E7%BC%A9%E5%86%99/2021/10/12/</url>
+    <url>/public/4_Linux_%E5%B8%B8%E8%A7%81%E7%BC%A9%E5%86%99/</url>
     <content><![CDATA[<p>linux、ssh、ftp、rpm、vsftpd、firewalld、httpd等</p>
 <span id="more"></span>
 
@@ -401,7 +401,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>PuzzleSDK</title>
-    <url>/public/5_PuzzleSDK/2021/10/12/</url>
+    <url>/public/5_PuzzleSDK/</url>
     <content><![CDATA[<p>目录<br>一、PuzzleSDK</p>
 <ul>
 <li>1.关键字  </li>
@@ -633,7 +633,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>进程与端口的关系</title>
-    <url>/public/6_%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%AB%AF%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/2021/11/08/</url>
+    <url>/public/6_%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%AB%AF%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
     <content><![CDATA[<p>进程与端口的关系</p>
 <span id="more"></span>
 
@@ -646,7 +646,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>Cocos2d导入Box2D源码库</title>
-    <url>/public/7_Cocos2dx_%E6%8E%A5%E5%85%A5Box2d/2021/11/08/</url>
+    <url>/public/7_Cocos2dx_%E6%8E%A5%E5%85%A5Box2d/</url>
     <content><![CDATA[<p>XCode导入Box2D源码库</p>
 <span id="more"></span>
 
@@ -666,7 +666,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>Git</title>
-    <url>/public/8_Git/2021/11/08/</url>
+    <url>/public/8_Git/</url>
     <content><![CDATA[<p>代码找回、远程仓库修改、其他命令</p>
 <span id="more"></span>
 <h1 id="一、git本地丢失代码找回"><a href="#一、git本地丢失代码找回" class="headerlink" title="一、git本地丢失代码找回"></a>一、git本地丢失代码找回</h1><p>终端A执行：<code>git reflog</code><br>终端B执行：<code>git reset --hard HEAD@&#123;7&#125;</code></p>
@@ -688,7 +688,7 @@ _popper-&gt;pop()      ///开始弹
   </entry>
   <entry>
     <title>配置SSL证书</title>
-    <url>/public/9_Nginx_%E9%85%8D%E7%BD%AESSL%E8%AF%81%E4%B9%A6/2021/11/08/</url>
+    <url>/public/9_Nginx_%E9%85%8D%E7%BD%AESSL%E8%AF%81%E4%B9%A6/</url>
     <content><![CDATA[<p>nginx配置ssl证书</p>
 <span id="more"></span>
 
