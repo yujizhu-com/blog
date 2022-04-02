@@ -324,7 +324,7 @@ _popper-&gt;pop()      ///开始弹
 </ol>
 </body></html>]]></content>
       <categories>
-        <category>面向对象</category>
+        <category>MySQL</category>
       </categories>
   </entry>
   <entry>
@@ -350,7 +350,7 @@ _popper-&gt;pop()      ///开始弹
 <h2 id="6-补充："><a href="#6-补充：" class="headerlink" title="6.补充："></a>6.补充：</h2><p>代码中也可以通过指定父节点id直接获取form_edu的父节点对象：<br>f_Div = document.getElementById(“f_div”);</p>
 </body></html>]]></content>
       <categories>
-        <category>面向对象</category>
+        <category>js</category>
       </categories>
   </entry>
   <entry>
